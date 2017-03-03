@@ -19,7 +19,7 @@ nav {
     @media screen and #{$tablet} {
       display: none;
     }
-    li {        //change to li.dropdown to give background effect only to dropdowns
+    a, li {   //hover effect when nav links or dropdowns are selected
       margin: 0;
       &:hover {
         background: $light;
@@ -75,6 +75,7 @@ nav {
     list-style: none;
     position: absolute;
     top: 58px;
+    left: 0;
     width: 100%;
     background: $light;
     li {
