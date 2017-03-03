@@ -5,5 +5,9 @@ section {
     height: 300px; //change default height of top section image
     object-fit: cover;
     display: block;
+    transition: height ease-in-out 200ms;
+    @media screen and #{$mobile} {
+      height: 200px;
+    }
   }
 }
