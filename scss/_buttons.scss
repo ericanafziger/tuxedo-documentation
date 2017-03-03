@@ -63,8 +63,8 @@ button {
   border: 2px solid $color-pop;
   color: $color-pop;
   &:hover {
-    border: 2px solid $light;
-    background: $light;
-    color: $dark;
+    border: 2px solid $color-pop;
+    background: $color-pop;
+    color: $light;
   }
 }

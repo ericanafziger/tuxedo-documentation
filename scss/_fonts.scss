@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-family: $header-font;
 }
 h1 {
@@ -18,17 +18,19 @@ h3 {
 
 h4 {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 32px;
 }
 
 h5 {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 32px;
 }
 
 h6 {
-    font-size: 12px;
-    line-height: 20px;
+    @extend %body-font;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
 }
 p {
   @extend %body-font;

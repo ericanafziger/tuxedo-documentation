@@ -59,3 +59,30 @@
 .relative {
   position: relative;
 }
+
+.box-pop {
+  border: 2px solid $color-pop;
+  padding: 40px;
+}
+.box-dark {
+  border: 2px solid $dark;
+  padding: 40px;
+}
+.box-light {
+  border: 2px solid $light;
+  padding: 40px;
+}
+
+.border-left-pop {
+  border-left: 2px solid $color-pop;
+  padding-left: 40px;
+}
+.border-left-dark {
+  border-left: 2px solid $dark;
+  padding-left: 40px;
+  margin-left: 40px;
+}
+.border-left-light {
+  border-left: 2px solid $light;
+  padding-left: 40px;
+}
