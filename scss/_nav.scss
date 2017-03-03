@@ -1,0 +1,192 @@
+nav {
+  position: absolute; //change to position: relative for bar that starts above content & position: fixed for a fixed nav
+  width: 100%;
+  height: 60px;
+  max-width: 1400px;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%,0);
+  z-index: 2;
+  font-family: $header-font;
+  @media screen and #{$tablet} {
+    padding-right: 30px;
+  }
+  .menu-items {
+    flex: 3;
+    max-width: 700px; //maximum width of container holding menu items
+    list-style: none;
+    display: flex;
+    @media screen and #{$tablet} {
+      display: none;
+    }
+    li {        //change to li.dropdown to give background effect only to dropdowns
+      margin: 0;
+      &:hover {
+        background: $light;
+        color: $dark;
+        cursor: pointer;
+      }
+      a:hover {
+        color: inherit;
+      }
+    }
+  }
+  header {
+    padding-left: 30px;
+    flex: 1;
+    align-self: center;
+    img {
+      height: 18px;
+      object-fit: cover;
+    }
+  }
+}
+.nav-light {
+  background: $light;
+  max-width: 100%;
+  color: $dark;
+}
+.nav-dark {
+  max-width: 100%;
+  background: $dark;
+  color: $light;
+}
+.nav-pop {
+  max-width: 100%;
+  background: $color-pop;
+  color: $light;
+}
+.nav-ghost-light {
+  border-bottom: 2px solid $light;
+  color: $light;
+}
+.nav-ghost-dark {
+  border-bottom: 2px solid $dark;
+  color: $dark;
+}
+.nav-ghost-pop {
+  border-bottom: 2px solid $color-pop;
+  color: $color-pop;
+}
+.dropdown {
+  position: relative;
+  .dropdown-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 58px;
+    width: 100%;
+    background: $light;
+    li {
+      transition: background ease-in 100ms, color ease-in 100ms;
+      background: $light;
+      color: $dark;
+      padding: 15px 20px;
+      &:hover {
+        background: $dark;
+        color: $light;
+      }
+    }
+  }
+  .sub-dropdown-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    width: 160px; //change width of sub-dropdown-menu
+    height: 100%;
+    left: 100%; //switch to right to display on other side of menu
+  }
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown:hover > .sub-dropdown-menu {
+  display: block;
+}
+
+//===========Mobile Menu=========//
+.mobile-nav {
+  display: none;
+  @media screen and #{$tablet} {
+    display: flex;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  .hamburger {
+    position: relative;
+    background: url('data:image/svg+xml;utf8,<svg width="27px" height="21px" viewBox="299 11 27 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" fill="none" transform="translate(301.000000, 13.000000)" stroke-linecap="round" stroke-width="1" fill-rule="evenodd"><g id="Nav/Menu" stroke="#F4F4F4"><path d="M0.409326823,1.5 L22.5119031,1.5" stroke-width="3"></path><path d="M0.409326823,8.5 L22.5119031,8.5" stroke-width="3"></path><path d="M0.409326823,15.5 L22.5119031,15.5" stroke-width="3"></path></g></g></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 21px;
+    width: 27px;
+  }
+}
+.flyout {
+  position: fixed;
+  display: none;
+  overflow: auto;
+  background-image: linear-gradient(-180deg, transparentize($dark, 0) 20%, transparentize($color-pop, 0.1) 100%);
+  width: 100%;
+  height: 100vh;
+  .bar {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background: $dark;
+    padding-left: 5px;
+    .close {
+      flex: 1;
+      z-index: 5;
+      background: url('data:image/svg+xml;utf8, <svg width="19px" height="19px" viewBox="-1 -1 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Nav/Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M0.65145077,0.6658667 L16.2803323,16.2947482" stroke="#F4F4F4" stroke-width="3"></path>
+      <path d="M0.65145077,0.6658667 L16.2803323,16.2947482" stroke="#F4F4F4" stroke-width="3" transform="translate(8.465892, 8.480307) scale(-1, 1) translate(-8.465892, -8.480307) "></path></g></svg>');
+      background-repeat: no-repeat;
+      background-position: 70%;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.flyout-menu {
+  margin: 20px 0 40px 0;
+  list-style: none;
+  li {
+    width: 180px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 5rem;
+    margin: 0 auto;
+    border-bottom: 3px solid $light;
+    a {
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      line-height: 5rem;
+    }
+  }
+  .fly-dropdown, .sub-fly-dropdown {
+    .dropdown-menu {
+      display: none;
+      padding-bottom: 20px;
+      list-style: none;
+      li {
+        border-bottom: none;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 2rem;
+        a {
+          font-size: 1rem;
+          line-height: 2rem;
+        }
+      }
+      .sub-dropdown-menu {
+        display: none;
+        border-top: 1px solid $light;
+        padding-top: 10px;
+        list-style: none;
+        margin-left: 20px;
+      }
+    }
+  }
+}

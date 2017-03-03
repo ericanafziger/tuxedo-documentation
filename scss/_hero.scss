@@ -1,0 +1,54 @@
+.hero {
+  position: relative;
+  font-family: $header-font;
+  min-height: 100vh;
+  height: auto;
+  &-content {
+    max-width: 1080px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen
+      and #{$mobile-landscape} {
+        top: 100px;
+        height: auto;
+        transform: translate(-50%, 0);
+      }
+  }
+  header {
+    width: 70%;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: width ease-in 200ms;
+    img {
+      max-width: 100%;
+    }
+    @media screen and #{$tablet} {
+      width: 100%;
+    }
+  }
+  &-body {
+    margin: auto;
+    position: relative;
+    padding: 10px 0;
+    width: 70%;
+    transition: width ease-in 200ms;
+    @media screen and #{$mobile} {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  &-image {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    @media screen and #{$mobile-landscape} {
+        height: 170vh; //customize this height to control how large hero should be in landscape mode on mobile devices
+      }
+  }
+}

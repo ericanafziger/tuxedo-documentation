@@ -1,0 +1,61 @@
+// Background Helpers
+
+.bg-dark {
+  background: $dark;
+}
+.bg-light {
+  background: $light;
+}
+.bg-pop {
+  background: $color-pop;
+}
+.bg-t-light {
+  background: transparentize($light, 0.3);
+}
+.bg-t-dark {
+  background: transparentize($dark, 0.3);
+}
+.bg-t-pop {
+  background: transparentize($color-pop, 0.3);
+}
+
+
+
+// Text Helpers
+
+.text-dark {
+  color: $dark;
+}
+.text-grey {
+  color: $md-grey;
+}
+.text-light {
+  color: $light;
+}
+.text-pop {
+  color: $color-pop;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.underline-dark {
+  border-bottom: 2px solid $dark;
+}
+.underline-light {
+  border-bottom: 2px solid $light;
+}
+.underline-pop {
+  border-bottom: 2px solid $color-pop;
+}
+
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
