@@ -42,8 +42,9 @@ h6 {
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
+  color: #5C5C5C;
   margin-bottom: 20px;
-  letter-spacing: 0.8px; }
+  letter-spacing: 1px; }
 
 p {
   font-size: 16px;
@@ -400,8 +401,12 @@ nav {
 .side-bar {
   position: fixed;
   height: 100vh;
-  padding: 0;
+  padding: 50px 40px 20px 40px;
   width: 400px; }
+  .side-bar img {
+    display: block;
+    margin: auto;
+    max-width: 90%; }
 
 .side-bar-content {
   padding: 90px 145px 30px 500px;
@@ -430,27 +435,24 @@ button {
   background: #F4F4F4;
   border: 2px solid #F4F4F4; }
   .btn-light:hover {
-    background: #191919;
-    border-color: #191919;
-    color: #F4F4F4; }
+    background: #dbdbdb;
+    border-color: #dbdbdb; }
 
 .btn-dark {
   color: #F4F4F4;
   background: #191919;
   border: 2px solid #191919; }
   .btn-dark:hover {
-    background: #F4F4F4;
-    border-color: #F4F4F4;
-    color: #191919; }
+    background: #4c4c4c;
+    border-color: #4c4c4c; }
 
 .btn-pop {
   color: #F4F4F4;
   background: #2A7F62;
   border: 2px solid #2A7F62; }
   .btn-pop:hover {
-    background: #F4F4F4;
-    border-color: #F4F4F4;
-    color: #191919; }
+    background: #1d5944;
+    border-color: #1d5944; }
 
 [class*="btn-ghost"] {
   background: none; }
@@ -854,6 +856,8 @@ section {
   font-family: monospace;
   border: 1px solid #9B9B9B;
   background: #F4F4F4;
-  padding: 20px; }
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #5C5C5C; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -10,9 +10,9 @@
   </head>
   <body>
     <div class="side-bar bg-pop">
-      <header>
-        <h1>This is the header</h1>
-      </header>
+      <head>
+        <img src="img/thin-logo-large.svg" alt="tuxedo logo">
+      </head>
     </div>
     <div class="side-bar-content">
       <h6>Tuxedo was designed with you - the developer - in mind. </h6>
@@ -29,6 +29,60 @@
       </p>
       <div class="code">
         git clone https://github.com/ericanafziger/tuxedo-css
+      </div>
+      <p>
+        Navigate into you project. To get started we are going to watch the Sass component of your project. Now, when you start making changes it will be compiled as CSS. If you already have Sass installed on your machine ignore the first snippet below. Once you are done, open a new terminal window or tab; this Sass watch should be left running anytime you are working on the project.
+      </p>
+      <div class="code">
+        gem install sass
+      </div>
+      <div class="code">
+        sass --watch scss:css
+      </div>
+      <br>
+      <h1 class="text-pop underline-pop">Project Structure</h1>
+      <p>Let’s take a look at what Tuxedo contains.</p>
+      <p>The index.html page contains the basic project structure to get your website started.</p>
+      <p>There are two files in the js folder. The tuxedo.js file has everything you need to make things like nav bars and animations work. The scripts.js file is for you to put your own code in.</p>
+      <p>There is an img folder with great high-res images from Unsplash to get your project started.</p>
+      <p>Finally, there is the scss folder full of all the components you need for your project. Unlike other frameworks, Tuxedo is design so you can directly edit these file. Code is clearly commented and easy to follow. Start off in the _global.scss folder where you can decide what colors and fonts to use. Tuxedo is designed to have several neutral colors and then one pop of color to keep your site looking beautiful.</p>
+      <div class="code">
+        tuxedo-css/<br>
+        |--scss /<br>
+        |  |--_animations.scss<br>
+        |  |--_buttons.scss<br>
+        |  |--_fonts.scss<br>
+        |  |--_forms.scss<br>
+        |  |--_global.scss<br>
+        |  |--_grid.scss<br>
+        |  |--_helpers.scss<br>
+        |  |--_hero.scss<br>
+        |  |--_mediaQueries.scss<br>
+        |  |--_nav.scss<br>
+        |  |--_reset.scss<br>
+        |  |--_threejs.scss<br>
+        |  |--_styles.scss<br>
+        |<br>
+        |--js/<br>
+        |  |--tuxedo.js<br>
+        |  |--scripts.js<br>
+        |<br>
+        |--img<br>
+        |<br>
+        |--index.html<br>
+      </div>
+      <br>
+      <h1 class="text-pop underline-pop">Download One Component at a Time</h1>
+      <p>
+        If you only want to download Tuxedo one component at a time, click on a link below to get started. This option is great for lightweight sites that don’t need much code to get started, or for those just looking for a grid, forms, etc.  Each of these downloads will come with the needed SCSS files for the components, overrides, and global variables, as well as any necessary JavaScript files.
+      </p>
+      <div class="border-left-pop">
+        <h4><a href="#">Animations</a></h4>
+        <h4><a href="#">Buttons</a></h4>
+        <h4><a href="#">Forms</a></h4>
+        <h4><a href="#">Grid</a></h4>
+        <h4><a href="#">Hero</a></h4>
+        <h4><a href="#">Nav</a></h4>
       </div>
     </div>
 

@@ -16,9 +16,8 @@ button {
   background: $light;
   border: 2px solid $light;
   &:hover {
-    background: $dark;
-    border-color: $dark;
-    color: $light;
+    background: darken($light, 10%);
+    border-color: darken($light, 10%);
   }
 }
 .btn-dark {
@@ -26,9 +25,8 @@ button {
   background: $dark;
   border: 2px solid $dark;
   &:hover {
-    background: $light;
-    border-color: $light;
-    color: $dark;
+    background: lighten($dark, 20%);
+    border-color: lighten($dark, 20%);
   }
 }
 .btn-pop {
@@ -36,9 +34,8 @@ button {
   background: $color-pop;
   border: 2px solid $color-pop;
   &:hover {
-    background: $light;
-    border-color: $light;
-    color: $dark;
+    background: darken($color-pop, 10%);
+    border-color: darken($color-pop, 10%);
   }
 }
 [class*="btn-ghost"] {

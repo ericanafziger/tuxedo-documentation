@@ -33,8 +33,9 @@ h6 {
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
+    color: $dark-grey;
     margin-bottom: 20px;
-    letter-spacing: 0.8px;
+    letter-spacing: 1px;
 }
 p {
   @extend %body-font;
