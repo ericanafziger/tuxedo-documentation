@@ -11,14 +11,16 @@ body {
 h6, p {
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
-  letter-spacing: .8px; }
+  letter-spacing: .5px; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Josefin Sans", sans-serif; }
 
 h1 {
   font-size: 36px;
-  line-height: 40px; }
+  line-height: 40px;
+  margin-top: 20px;
+  padding-bottom: 20px; }
 
 h2 {
   font-size: 30px;
@@ -39,11 +41,14 @@ h5 {
 h6 {
   font-size: 18px;
   line-height: 24px;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-bottom: 20px;
+  letter-spacing: 0.8px; }
 
 p {
   font-size: 16px;
-  line-height: 20px; }
+  line-height: 20px;
+  margin-bottom: 20px; }
 
 a {
   font-size: 16px;
@@ -399,7 +404,7 @@ nav {
   width: 400px; }
 
 .side-bar-content {
-  padding: 90px 135px 30px 500px;
+  padding: 90px 145px 30px 500px;
   min-height: 100vh; }
 
 canvas {
@@ -414,6 +419,7 @@ button {
   height: 50px;
   font-weight: 500;
   padding: 15px 40px;
+  margin-bottom: 20px;
   transition: background ease-in-out 200ms, border ease-in-out 200ms; }
   button:hover, button:focus {
     cursor: pointer;
@@ -784,13 +790,16 @@ textarea {
   text-align: center; }
 
 .underline-dark {
-  border-bottom: 2px solid #191919; }
+  border-bottom: 2px solid #191919;
+  margin-bottom: 20px; }
 
 .underline-light {
-  border-bottom: 2px solid #F4F4F4; }
+  border-bottom: 2px solid #F4F4F4;
+  margin-bottom: 20px; }
 
 .underline-pop {
-  border-bottom: 2px solid #2A7F62; }
+  border-bottom: 2px solid #2A7F62;
+  margin-bottom: 20px; }
 
 .fixed {
   position: fixed; }
@@ -840,5 +849,11 @@ section {
     @media screen and (max-width: 760px) {
       section img {
         height: 60px; } }
+
+.code {
+  font-family: monospace;
+  border: 1px solid #9B9B9B;
+  background: #F4F4F4;
+  padding: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
