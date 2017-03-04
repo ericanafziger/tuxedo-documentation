@@ -191,3 +191,17 @@ nav {
     }
   }
 }
+
+
+//Side Bar Styling
+
+.side-bar {
+  position: fixed;
+  height: 100vh;
+  padding: 0;
+  width: 400px;
+}
+.side-bar-content {
+  padding: 90px 135px 30px 500px;
+  min-height: 100vh;
+}

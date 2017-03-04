@@ -86,7 +86,7 @@ $column-gutter: 1%; // CHANGE COLUMN GUTTER HERE: must use %;
 }
 
 [class*="f-col"] {
-  padding: 20px;
+  padding: 10px 20px;
   flex-direction: column;
   margin: 5px; //gutter between each flexed column
 }
