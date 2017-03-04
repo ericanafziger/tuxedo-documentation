@@ -196,14 +196,33 @@ nav {
 //Side Bar Styling
 
 .side-bar {
+  font-family: $header-font;
   position: fixed;
   height: 100vh;
-  padding: 50px 40px 20px 40px;
+  padding: 60px;
   width: 400px;
   img {
     display: block;
-    margin: auto;
-    max-width: 90%;
+    margin:auto;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  ul {
+    margin-top: 20px;
+    list-style: none;
+    color: $md-grey;
+    padding-bottom: 20px;
+    .active {
+      color: $light;
+      text-decoration: underline;
+    }
+    a {
+      font-size: 1.3em;
+      line-height: 2.5em;
+      &:hover {
+        color: $light;
+      }
+    }
   }
 }
 .side-bar-content {
