@@ -256,7 +256,7 @@ nav {
       margin: 0; }
       nav .menu-items a:hover, nav .menu-items li:hover {
         background: #F4F4F4;
-        color: #191919;
+        color: #262525;
         cursor: pointer; }
       nav .menu-items a a:hover, nav .menu-items li a:hover {
         color: inherit; }
@@ -271,11 +271,11 @@ nav {
 .nav-light {
   background: #F4F4F4;
   max-width: 100%;
-  color: #191919; }
+  color: #262525; }
 
 .nav-dark {
   max-width: 100%;
-  background: #191919;
+  background: #262525;
   color: #F4F4F4; }
 
 .nav-pop {
@@ -288,8 +288,8 @@ nav {
   color: #F4F4F4; }
 
 .nav-ghost-dark {
-  border-bottom: 2px solid #191919;
-  color: #191919; }
+  border-bottom: 2px solid #262525;
+  color: #262525; }
 
 .nav-ghost-pop {
   border-bottom: 2px solid #2A7F62;
@@ -308,10 +308,10 @@ nav {
     .dropdown .dropdown-menu li {
       transition: background ease-in 100ms, color ease-in 100ms;
       background: #F4F4F4;
-      color: #191919;
+      color: #262525;
       padding: 15px 20px; }
       .dropdown .dropdown-menu li:hover {
-        background: #191919;
+        background: #262525;
         color: #F4F4F4; }
   .dropdown .sub-dropdown-menu {
     display: none;
@@ -347,14 +347,14 @@ nav {
   position: fixed;
   display: none;
   overflow: auto;
-  background-image: linear-gradient(-180deg, #191919 20%, rgba(42, 127, 98, 0.9) 100%);
+  background-image: linear-gradient(-180deg, #262525 20%, rgba(42, 127, 98, 0.9) 100%);
   width: 100%;
   height: 100vh; }
   .flyout .bar {
     display: flex;
     height: 60px;
     width: 100%;
-    background: #191919;
+    background: #262525;
     padding-left: 5px; }
     .flyout .bar .close {
       flex: 1;
@@ -446,7 +446,7 @@ button {
     outline: none; }
 
 .btn-light {
-  color: #191919;
+  color: #262525;
   background: #F4F4F4;
   border: 2px solid #F4F4F4; }
   .btn-light:hover {
@@ -455,11 +455,11 @@ button {
 
 .btn-dark {
   color: #F4F4F4;
-  background: #191919;
-  border: 2px solid #191919; }
+  background: #262525;
+  border: 2px solid #262525; }
   .btn-dark:hover {
-    background: #4c4c4c;
-    border-color: #4c4c4c; }
+    background: #5a5757;
+    border-color: #5a5757; }
 
 .btn-pop {
   color: #F4F4F4;
@@ -477,13 +477,13 @@ button {
   color: #F4F4F4; }
   .btn-ghost-light:hover {
     background: #F4F4F4;
-    color: #191919; }
+    color: #262525; }
 
 .btn-ghost-dark {
-  border: 2px solid #191919;
-  color: #191919; }
+  border: 2px solid #262525;
+  color: #262525; }
   .btn-ghost-dark:hover {
-    background: #191919;
+    background: #262525;
     color: #F4F4F4; }
 
 .btn-ghost-pop {
@@ -507,7 +507,7 @@ form {
   border-bottom: 2px solid #F4F4F4; }
 
 .form-divide-dark {
-  border-bottom: 2px solid #191919; }
+  border-bottom: 2px solid #262525; }
 
 .form-divide-pop {
   border-bottom: 2px solid #2A7F62; }
@@ -524,8 +524,8 @@ label {
   margin-bottom: 3rem; }
 
 .form-header-dark {
-  color: #191919;
-  border-bottom: 2px solid #191919; }
+  color: #262525;
+  border-bottom: 2px solid #262525; }
 
 .form-header-light {
   color: #F4F4F4;
@@ -564,11 +564,11 @@ input {
 .input-light {
   border: 3px solid #F4F4F4;
   background: #F4F4F4;
-  color: #191919; }
+  color: #262525; }
 
 .input-dark {
-  border: 3px solid #191919;
-  background: #191919;
+  border: 3px solid #262525;
+  background: #262525;
   color: #F4F4F4; }
 
 .input-pop {
@@ -596,8 +596,8 @@ select {
   background-repeat: no-repeat; }
 
 .select-dark {
-  border: #191919;
-  background-color: #191919;
+  border: #262525;
+  background-color: #262525;
   color: #F4F4F4; }
 
 .select-pop {
@@ -614,11 +614,11 @@ textarea {
 .textarea-light {
   border: 3px solid #F4F4F4;
   background: #F4F4F4;
-  color: #191919; }
+  color: #262525; }
 
 .textarea-dark {
-  border: 3px solid #191919;
-  background: #191919;
+  border: 3px solid #262525;
+  background: #262525;
   color: #F4F4F4; }
 
 .textarea-pop {
@@ -632,7 +632,7 @@ textarea {
 
 .checkbox-dark {
   margin: 20px 0;
-  color: #191919; }
+  color: #262525; }
 
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
@@ -662,7 +662,7 @@ textarea {
 
 .checkbox-dark [type="checkbox"]:not(:checked) + label:before,
 .checkbox-dark [type="checkbox"]:checked + label:before {
-  border: 3px solid #191919; }
+  border: 3px solid #262525; }
 
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
@@ -680,7 +680,7 @@ textarea {
 
 .checkbox-dark [type="checkbox"]:not(:checked) + label:after,
 .checkbox-dark [type="checkbox"]:checked + label:after {
-  background: #191919; }
+  background: #262525; }
 
 [type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
@@ -704,7 +704,7 @@ textarea {
 
 .radio-dark {
   margin: 20px 0;
-  color: #191919; }
+  color: #262525; }
 
 [type="radio"]:not(:checked),
 [type="radio"]:checked {
@@ -736,7 +736,7 @@ textarea {
 
 .radio-dark [type="radio"]:not(:checked) + label:before,
 .radio-dark [type="radio"]:checked + label:before {
-  border: 3px solid #191919; }
+  border: 3px solid #262525; }
 
 [type="radio"]:not(:checked) + label:after,
 [type="radio"]:checked + label:after {
@@ -755,7 +755,7 @@ textarea {
 
 .radio-dark [type="radio"]:not(:checked) + label:after,
 .radio-dark [type="radio"]:checked + label:after {
-  background: #191919; }
+  background: #262525; }
 
 [type="radio"]:not(:checked) + label:after {
   opacity: 0;
@@ -774,7 +774,7 @@ textarea {
   color: #C8C8C8; }
 
 .bg-dark {
-  background: #191919; }
+  background: #262525; }
 
 .bg-light {
   background: #F4F4F4; }
@@ -786,13 +786,13 @@ textarea {
   background: rgba(244, 244, 244, 0.7); }
 
 .bg-t-dark {
-  background: rgba(25, 25, 25, 0.7); }
+  background: rgba(38, 37, 37, 0.7); }
 
 .bg-t-pop {
   background: rgba(42, 127, 98, 0.7); }
 
 .text-dark {
-  color: #191919; }
+  color: #262525; }
 
 .text-grey {
   color: #C8C8C8; }
@@ -807,7 +807,7 @@ textarea {
   text-align: center; }
 
 .underline-dark {
-  border-bottom: 2px solid #191919;
+  border-bottom: 2px solid #262525;
   margin-bottom: 20px; }
 
 .underline-light {
@@ -832,7 +832,7 @@ textarea {
   padding: 40px; }
 
 .box-dark {
-  border: 2px solid #191919;
+  border: 2px solid #262525;
   padding: 40px; }
 
 .box-light {
@@ -844,7 +844,7 @@ textarea {
   padding-left: 40px; }
 
 .border-left-dark {
-  border-left: 2px solid #191919;
+  border-left: 2px solid #262525;
   padding-left: 40px; }
 
 .border-left-light {
