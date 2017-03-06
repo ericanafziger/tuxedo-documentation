@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuxedo CSS - Hero</title>
+    <link rel="stylesheet" href="css/styles.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/tuxedo.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav class="nav-dark relative tablet-flex"> 
+      <header> 
+        <img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> 
+      </header>
+    	<ul class="mobile-nav flex-center"> 
+        <div class="hamburger"></div> 
+      </ul>
+      <div class="flyout">
+    	  <div class="bar"> 
+          <header class="text-light f-col-4"> 
+            <img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> 
+          </header> 
+          <div class="close f-col-1"></div> 
+        </div>
+        <ul class="flyout-menu"> 
+          <li><a href="start.html">Getting Started</a></li>
+          <li><a href="#">Animations</a></li>
+          <li><a href="buttons.html">Buttons</a></li>
+          <li><a href="#">Colors</a></li>
+          <li><a href="#">Fonts</a></li>
+          <li><a href="forms.html">Forms</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li><a href="#">Helpers</a></li>
+          <li><a href="hero.html">Hero</a></li>
+          <li><a href="nav.html">Nav</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="side-bar bg-dark">
+      <head>
+        <a href="index.html"><img src="img/thin-logo-large.svg" alt="tuxedo logo"></a>
+      </head>
+      <ul class="underline-light">
+        <li><a href="start.html">Getting Started</a></li>
+        <li><a href="#">Animations</a></li>
+        <li><a href="buttons.html">Buttons</a></li>
+        <li><a href="#">Colors</a></li>
+        <li><a href="#">Fonts</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="grid.html">Grid</a></li>
+        <li><a href="#">Helpers</a></li>
+        <li class="active"><a href="hero.html">Hero</a></li>
+        <li><a href="nav.html">Nav</a></li>
+      </ul>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="side-bar-content">
+      <h1 class="text-dark underline-dark">Hero</h1>
+      <p>
+        Hero sections have become very popular within webdesign today. Tuxedo has made it simple for you to integrate your own hero complete with background images and call to action buttons.
+      </p>
+
+      <h3 class="text-dark">Hero Section: Example 1</h3>
+      <div class="code-example">
+        <div class="hero">
+          <img class="hero-image" src="img/palms-dark.png" alt="Image of the sea">
+          <div class="hero-content">
+            <header>
+              <h1 class="text-light">Welcome to</h1>
+            </header>
+            <header>
+              <img src="img/thin-logo-large.svg" alt="">
+            </header>
+            <div class="hero-body">
+              <p class="text-light text-center">a different kind of css framework</p>
+              <br>
+              <div class="f-row">
+                <form>
+                  <button class="btn-pop" type="button">Get Started</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+<div class="hero">
+  <img class="hero-image" src="img/palms-dark.png" alt="Image of the sea">
+  <div class="hero-content">
+    <header>
+      <h1 class="text-light">Welcome to</h1>
+    </header>
+    <header>
+      <img src="img/thin-logo-large.svg" alt="">
+    </header>
+    <div class="hero-body">
+      <p class="text-light text-center">a different kind of css framework</p>
+      <br>
+      <div class="f-row">
+        <form>
+          <button class="btn-pop" type="button">Get Started</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+        </xmp>
+      </div>
+
+      <h3 class="text-dark">Hero Section: Example 2</h3>
+      <div class="code-example">
+        <div class="hero">
+          <img class="hero-image" src="img/palms-dark.png" alt="Image of palm leaves">
+          <div class="hero-content">
+            <div class="hero-body">
+              <form class="bg-t-dark">
+                <header>
+                  <h1 class="text-light">Login</h1>
+                </header>
+                <label class="text-light">Email</label>
+                <input type="email" class="input-light" placeholder="Email Address">
+                <label class="text-light">Password</label>
+                <input type="password" class="input-light" placeholder="Password">
+                <div class="form-divide-light"></div>
+                <div class="f-row">
+                  <button class="btn-light f-col-1 flex-center" name="button">Sign Up</button>
+                  <button class="btn-pop f-col-1 flex-center" name="button">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="code">
+        <xmp>
+<div class="hero">
+  <img class="hero-image" src="img/palms-dark.png" alt="Image of palm leaves">
+  <div class="hero-content">
+    <div class="hero-body">
+      <form class="bg-t-dark">
+        <header>
+          <h1 class="text-light">Login</h1>
+        </header>
+        <label class="text-light">Email</label>
+        <input type="email" class="input-light" placeholder="Email Address">
+        <label class="text-light">Password</label>
+        <input type="password" class="input-light" placeholder="Password">
+        <div class="form-divide-light"></div>
+        <div class="f-row">
+          <button class="btn-light f-col-1 flex-center" name="button">Sign Up</button>
+          <button class="btn-pop f-col-1 flex-center" name="button">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+        </xmp>
+      </div>
+
+      <h3 class="text-dark">Hero Section: Example 3</h3>
+      <div class="code-example">
+        <div class="hero">
+          <img class="hero-image" src="img/sea.jpg" alt="Image of the sea">
+          <div class="hero-content">
+            <header class="underline-dark">
+              <h1 class="text-dark">The Sea</h1>
+            </header>
+            <div class="hero-body">
+              <p class="text-center text-dark">
+                A film by Esther Row
+              </p>
+              <br>
+              <br>
+              <div class="f-row">
+                <button class="btn-dark f-col-1 flex-center" name="button">View the Film</button>
+                <button class="btn-light f-col-1 flex-center" name="button">Visit the Site</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="code">
+        <xmp>
+<div class="hero">
+  <img class="hero-image" src="img/sea.jpg" alt="Image of the sea">
+  <div class="hero-content">
+    <header class="underline-dark">
+      <h1 class="text-dark">The Sea</h1>
+    </header>
+    <div class="hero-body">
+      <p class="text-center text-dark">
+        A film by Esther Row
+      </p>
+      <br>
+      <br>
+      <div class="f-row">
+        <button class="btn-dark f-col-1 flex-center" name="button">View the Film</button>
+        <button class="btn-light f-col-1 flex-center" name="button">Visit the Site</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </xmp>
+      </div>
+
+
+  </body>
+</html>

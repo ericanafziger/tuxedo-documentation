@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuxedo CSS - Grid</title>
+    <link rel="stylesheet" href="css/styles.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/tuxedo.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav class="nav-dark relative tablet-flex"> 
+      <header> 
+        <img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> 
+      </header>
+    	<ul class="mobile-nav flex-center"> 
+        <div class="hamburger"></div> 
+      </ul>
+      <div class="flyout">
+    	  <div class="bar"> 
+          <header class="text-light f-col-4"> 
+            <img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> 
+          </header> 
+          <div class="close f-col-1"></div> 
+        </div>
+        <ul class="flyout-menu"> 
+          <li><a href="start.html">Getting Started</a></li>
+          <li><a href="#">Animations</a></li>
+          <li><a href="buttons.html">Buttons</a></li>
+          <li><a href="#">Colors</a></li>
+          <li><a href="#">Fonts</a></li>
+          <li><a href="forms.html">Forms</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li><a href="#">Helpers</a></li>
+          <li><a href="hero.html">Hero</a></li>
+          <li><a href="nav.html">Nav</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="side-bar bg-dark">
+      <head>
+        <a href="index.html"><img src="img/thin-logo-large.svg" alt="tuxedo logo"></a>
+      </head>
+      <ul class="underline-light">
+        <li><a href="start.html">Getting Started</a></li>
+        <li><a href="#">Animations</a></li>
+        <li><a href="buttons.html">Buttons</a></li>
+        <li><a href="#">Colors</a></li>
+        <li><a href="#">Fonts</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li class="active"><a href="grid.html">Grid</a></li>
+        <li><a href="#">Helpers</a></li>
+        <li><a href="hero.html">Hero</a></li>
+        <li><a href="nav.html">Nav</a></li>
+      </ul>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="side-bar-content">
+      <h1 class="text-dark underline-dark">Grid</h1>
+      <p>
+        Tuxedo offers two grid options: a basic grid and a flex grid. The basic grid is a mobile-responsive, standard 12 column grid with the option for gutters. The flex grid uses flexbox and makes creating custom navbars and column layouts a sinch.
+      </p>
+
+      <h3 class="text-dark">Basic Grid</h3>
+      <p>This is a 12 column grid. Each grid can be placed inside a <code>.container</code> for some styled presets, or you can ditch the container if it doesn't work within your layout. A <code>.row</code> is needed for each set of columns. Columns declarations should add up to 12 in each row to display correctly. Columns are specified by <code>.col-1 .col-2 .col-3</code> and so on.</p>
+      <p>Resize your browser window to see the responsiveness in action!</p>
+
+      <div class="code-example">
+        <div class="row text-light">
+          <div style="height:75px" class="col-1 flex-center bg-dark">
+            <h5>Col-1</h5>
+          </div>
+          <div style="height:75px" class="col-11 flex-center bg-t-pop">
+            <h5>Col-11</h5>
+          </div>
+        </div>
+
+        <div class="row text-light">
+          <div style="height:75px" style="height:75px" class="col-2 flex-center bg-pop">
+            <h5>Col-2</h5>
+          </div>
+          <div style="height:75px" style="height:75px" class="col-10 flex-center bg-t-dark">
+            <h5>Col-10</h5>
+          </div>
+        </div>
+
+        <div class="row text-light">
+          <div style="height:75px" style="height:75px" class="col-3 flex-center bg-dark">
+            <h5>Col-3</h5>
+          </div>
+          <div style="height:75px" style="height:75px" class="col-9 flex-center bg-t-pop">
+            <h5>Col-9</h5>
+          </div>
+        </div>
+
+        <div class="row text-light">
+          <div style="height:75px" style="height:75px" class="col-4 flex-center bg-pop">
+            <h5>Col-4</h5>
+          </div>
+          <div style="height:75px" style="height:75px" class="col-8 flex-center bg-t-dark">
+            <h5>Col-8</h5>
+          </div>
+        </div>
+
+        <div class="row text-light">
+          <div style="height:75px" style="height:75px" class="col-5 flex-center bg-dark">
+            <h5>Col-5</h5>
+          </div>
+          <div style="height:75px" style="height:75px" class="col-7 flex-center bg-t-pop">
+            <h5>Col-7</h5>
+          </div>
+        </div>
+
+        <div class="row text-light">
+          <div style="height:75px" style="height:75px" class="col-6 flex-center bg-pop">
+            <h5>Col-6</h5>
+          </div>
+          <div style="height:75px" style="height:75px" class="col-6 flex-center bg-t-dark">
+            <h5>Col-6</h5>
+          </div>
+        </div>
+
+        <div class="row text-light">
+          <div style="height:75px" style="height:75px" class="col-7 flex-center bg-dark">
+            <h5>Col-7</h5>
+          </div>
+          <div style="height:75px" style="height:75px" class="col-5 flex-center bg-t-pop">
+            <h5>Col-5</h5>
+          </div>
+        </div>
+
+        <div class="row text-light">
+          <div style="height:75px" class="col-8 flex-center bg-pop">
+            <h5>Col-8</h5>
+          </div>
+          <div style="height:75px" class="col-4 flex-center bg-t-dark">
+            <h5>Col-4</h5>
+          </div>
+        </div>
+
+        <div class="row text-light">
+          <div style="height:75px" class="col-9 flex-center bg-dark">
+            <h5>Col-9</h5>
+          </div>
+          <div style="height:75px" class="col-3 flex-center bg-t-pop">
+            <h5>Col-3</h5>
+          </div>
+        </div>
+
+        <div class="row text-light">
+          <div style="height:75px" class="col-10 flex-center bg-pop">
+            <h5>Col-10</h5>
+          </div>
+          <div style="height:75px" class="col-2 flex-center bg-t-dark">
+            <h5>Col-2</h5>
+          </div>
+        </div>
+
+        <div class="row text-light">
+          <div style="height:75px" class="col-11 flex-center bg-dark">
+            <h5>Col-11</h5>
+          </div>
+          <div style="height:75px" class="col-1 flex-center bg-t-pop">
+            <h5>Col-1</h5>
+          </div>
+        </div>
+
+        <div class="row text-light">
+          <div style="height:75px" class="col-12 flex-center bg-pop">
+            <h5>Col-12</h5>
+          </div>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+<!--This code is not identical to the example above-->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-1">
+      <!--column 1 content here-->
+    </div>
+    <div class="col-11">
+      <!--column 2 content here-->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-3">
+      <!--column 1 content here-->
+    </div>
+    <div class="col-4">
+      <!--column 2 content here-->
+    </div>
+    <div class="col-5">
+      <!--column 3 content here-->
+    </div>
+  </div>
+</div>
+
+        </xmp>
+      </div>
+
+      <h3 class="text-dark">Flex Grid</h3>
+      <p>With the flex grid your content will grow and shrink to fill up remaining space in the column. There are four column sizes: <code>.f-col-1</code>, <code>.f-col-2</code>, <code>.f-col-3</code>, and <code>.f-col-4</code>.</p>
+      <p>A <code>.f-col-2</code> will take up twice as much space as a <code>f-col-1</code> and a <code>f-col-3</code> will take up three times as much space as a <code>f-col-1</code>. See it in action below. Add the class <code>.responsive</code> to your rows to use predefined media queries at the tablet and mobile sizes.</p>
+
+      <div class="code-example">
+        <div class="f-row responsive text-light">
+          <div class="f-col-1 flex-center bg-dark">
+            <h2>Flex 1</h2>
+          </div>
+          <div class="f-col-2 flex-center bg-t-pop">
+            <h2>Flex 2</h2>
+          </div>
+          <div class="f-col-3 flex-center bg-pop">
+            <h2>Flex 3</h2>
+          </div>
+          <div class="f-col-4 flex-center bg-t-dark">
+            <h2>Flex 4</h2>
+          </div>
+        </div>
+
+        <div class="f-row responsive text-light">
+          <div class="f-col-1 flex-center bg-t-dark">
+            <h2>Flex 1</h2>
+          </div>
+          <div class="f-col-1 flex-center bg-pop">
+            <h2>Flex 1</h2>
+          </div>
+          <div class="f-col-1 flex-center bg-t-pop">
+            <h2>Flex 1</h2>
+          </div>
+          <div class="f-col-1 flex-center bg-dark">
+            <h2>Flex 1</h2>
+          </div>
+        </div>
+
+        <div class="f-row responsive text-light">
+          <div class="f-col-3 flex-center bg-light">
+            <h2 class="text-dark">Flex 3</h2>
+          </div>
+          <div class="f-col-4 flex-center bg-pop">
+            <h2>Flex 4</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="code">
+        <xmp>
+<div class="container">
+  <div class="f-row responsive">
+    <div class="f-col-1">
+      <!--column 1 content-->
+    </div>
+    <div class="f-col-2">
+      <!--column 2 content-->
+    </div>
+    <div class="f-col-3">
+      <!--column 3 content-->
+    </div>
+    <div class="f-col-4">
+      <!--column 4 content-->
+    </div>
+  </div>
+</div>
+        </xmp>
+      </div>
+
+      <h3>Flex Grid Helper Classes</h3>
+      <p>
+        Flexbox allows users a lot of options for positioning items within a flexed container. Tuxedo makes it easy to apply different positioning with helper classes. Simply add one of these helpers to your f-col(umn) to position. Here's a breakdown of the positioning options and their results.<br>* Hint: you can add these helper classes to any items within a flexed container, not just columns!
+      </p>
+      <div class="code-example">
+        <div class="f-row responsive">
+              <div style="height: 400px" class="f-col-1 bg-t-dark">
+                <p class="text-light">Content is placed at <code>flex-start</code>- the beginning of the horizontal and vertical axis - by default if no flex direction is specified.</p>
+                <br>
+                <button class="btn-ghost-light">Flex Start</button>
+              </div>
+              <div class="f-col-1 flex-center bg-light">
+                <p>This content is positioned on the horizontal and vertical center axis with <code>.flex-center</code>.</p>
+                <br>
+                <button class="btn-ghost-dark">Flex Center</button>
+              </div>
+            </div>
+            <div class="f-row responsive">
+              <div style="height: 400px" class="f-col-1 flex-center-h bg-dark">
+                <p class="text-light">This content is positioned on the horizontal center axis, but not the vertical center axis with <code>.flex-center-h</code>.</p>
+                <br>
+                <button class="btn-ghost-light">Flex Center H</button>
+              </div>
+              <div class="f-col-1 flex-center-v bg-pop">
+                <p style="width: 70%"class="text-light">
+                  Use <code>.flex-center-v</code> to position items on the center of the vercal axis but not the horizontal axis.
+                </p>
+                <br>
+                <button class="btn-ghost-light">Flex Center Vertical</button>
+              </div>
+            </div>
+
+            <div class="f-row responsive">
+              <div style="min-height: 100px" class="f-col-1 bg-dark flex-center">
+                <p class="text-light">
+                  If there is only one item in a row it will stretch to take up the entire width!
+                </p>
+              </div>
+            </div>
+
+            <div class="f-row responsive">
+              <div class="f-col-1 bg-light flex-end">
+                <p style="width: 70%"class="text-dark">
+                  Use  <code>.flex-end</code> to position content on the end of the horizontal axis and the end of the vertical axis.
+                </p>
+                <br>
+                <button class="btn-dark">Flex End</button>
+              </div>
+              <div style="min-height: 400px"class="f-col-1 bg-t-pop flex-end-v">
+                <p style="width: 70%"class="text-light">
+                  Use <code>.flex-end-v</code> to position items on the end of the vercal axis but the start of the horizontal axis.
+                </p>
+                <br>
+                <button class="btn-light">Flex End V</button>
+              </div>
+            </div>
+            <div class="f-row responsive">
+              <div style="min-height: 300px" class="f-col-1 bg-t-dark flex-end-h">
+                <p style="width: 70%"class="text-light">
+                  This content is positioned on the end of the horizontal axis but at the beginning of the vercal axis with <code>.flex-end-h</code>
+                </p>
+                <br>
+                <button class="btn-light">Flex End H</button>
+              </div>
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
