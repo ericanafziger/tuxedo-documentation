@@ -22,3 +22,11 @@
   max-width: 900px;
   margin-bottom: 20px;
 }
+
+.palette {
+  display: flex;
+  .palette-color {
+    width: 75px;
+    height: 75px;
+  }
+}

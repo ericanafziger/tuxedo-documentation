@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuxedo CSS - Colors</title>
+    <link rel="stylesheet" href="css/styles.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/tuxedo.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav class="nav-dark relative tablet-flex"> 
+      <header> 
+        <img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> 
+      </header>
+    	<ul class="mobile-nav flex-center"> 
+        <div class="hamburger"></div> 
+      </ul>
+      <div class="flyout">
+    	  <div class="bar"> 
+          <header class="text-light f-col-4"> 
+            <img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> 
+          </header> 
+          <div class="close f-col-1"></div> 
+        </div>
+        <ul class="flyout-menu"> 
+          <li><a href="start.html">Getting Started</a></li>
+          <li><a href="animations.html">Animations</a></li>
+          <li><a href="buttons.html">Buttons</a></li>
+          <li><a href="colors.html">Colors</a></li>
+          <li><a href="#">Fonts</a></li>
+          <li><a href="forms.html">Forms</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li><a href="#">Helpers</a></li>
+          <li><a href="hero.html">Hero</a></li>
+          <li><a href="nav.html">Nav</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="side-bar bg-dark">
+      <head>
+        <a href="index.html"><img src="img/thin-logo-large.svg" alt="tuxedo logo"></a>
+      </head>
+      <ul class="underline-light">
+        <li><a href="start.html">Getting Started</a></li>
+        <li><a href="animations.html">Animations</a></li>
+        <li><a href="buttons.html">Buttons</a></li>
+        <li class="active"><a href="colors.html">Colors</a></li>
+        <li><a href="#">Fonts</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="grid.html">Grid</a></li>
+        <li><a href="#">Helpers</a></li>
+        <li><a href="hero.html">Hero</a></li>
+        <li><a href="nav.html">Nav</a></li>
+      </ul>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="side-bar-content">
+      <h1 class="text-dark underline-dark">Colors</h1>
+      <p>
+        Choosing a color palette is an important step in any web design. Tuxedo makes it easy with several color palette options to get you started. Tuxedo's design scheme is based around a base dark color, light color, and pop of color. Then there are several greys in the middle. To change these colors to your own custom ones, simply follow the steps below.
+      </p>
+
+      <h3 class="text-dark">Creating color changes</h3>
+      <p>Tuxedo's <code>_global.scss</code> file contains all the variables that gives your webpage color. When you open the globals file you should see the following (for our current purposes we are going to ignore everything below the $color-pop variable):</p>
+      <div class="code">
+        <xmp>
+//change variables below to customize the tuxedo framework
+
+//colors
+$dark: #262525; //change global 'dark variable'
+$light: #F4F4F4; //change global 'light variable'
+$light-grey: #F4F4F4;
+$md-grey: #C8C8C8;
+$dark-grey: #5C5C5C;
+$color-pop: #2A7F62; //change global 'color-pop'
+
+(...)
+        </xmp>
+      </div>
+      <p>
+        If you've never used Sass before this might look a little mysterious so let's break it down. Sass allows you (the developer) to create variables that are implemented throughout your CSS. Variables are defined with a <code>$</code> preceeding them. Tuxedo's variable names are descriptive so you know exactly what you're changing. Now, wherever you see <code>$dark</code> throughout your SCSS files, you know that is actually a placeholder for the color #262525 (or whatever color you've replace it with). So when you want to change the dark color in your project, you only have to change it in the global file to see your changes reflected throughout your project.
+      </p>
+
+      <h3 class="text-dark">Color Palettes</h3>
+      <p>
+        Here are some color palettes we've put together to get your started.
+      </p>
+      <h4>Classic Tuxedo Palette</h4>
+      <div class="code-example">
+        <div class="palette">
+          <div class="palette-color bg-dark"></div>
+          <div class="palette-color bg-dark-grey"></div>
+          <div class="palette-color bg-md-grey"></div>
+          <div class="palette-color bg-light"></div>
+          <div class="palette-color bg-pop"></div>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+$dark: #262525;
+$dark-grey: #5c5c5c;
+$md-grey: #c8c8c8;
+$light: #f4f4f4;
+$color-pop: #2A7F62;
+        </xmp>
+      </div>
+
+      <h4>Professional Palette</h4>
+      <div class="code-example">
+        <div class="palette">
+          <div style="background: #1C2C3C" class="palette-color"></div>
+          <div style="background: #505255" class="palette-color"></div>
+          <div style="background: #D9DADB" class="palette-color"></div>
+          <div style="background: #F1F1F2" class="palette-color"></div>
+          <div style="background: #FFC857" class="palette-color"></div>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+$dark: #1C2C3C;
+$dark-grey: #505255;
+$md-grey: #D9DADB;
+$light: #F1F1F2;
+$color-pop: #FFC857;
+        </xmp>
+      </div>
+
+      <h4>Bright Palette</h4>
+      <div class="code-example">
+        <div class="palette">
+          <div class="palette-color bg-dark"></div>
+          <div class="palette-color bg-dark-grey"></div>
+          <div class="palette-color bg-md-grey"></div>
+          <div class="palette-color bg-light"></div>
+          <div style="background: #CE4257" class="palette-color"></div>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+$dark: #262525;
+$dark-grey: #5c5c5c;
+$md-grey: #c8c8c8;
+$light: #f4f4f4;
+$color-pop: #CE4257;
+        </xmp>
+      </div>
+
+
+
+
+  </body>
+</html>

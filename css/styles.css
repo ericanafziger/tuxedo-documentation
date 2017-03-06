@@ -787,6 +787,12 @@ textarea {
 .bg-dark {
   background: #262525; }
 
+.bg-dark-grey {
+  background: #5C5C5C; }
+
+.bg-md-grey {
+  background: #C8C8C8; }
+
 .bg-light {
   background: #F4F4F4; }
 
@@ -914,5 +920,11 @@ section {
 .code-example {
   max-width: 900px;
   margin-bottom: 20px; }
+
+.palette {
+  display: flex; }
+  .palette .palette-color {
+    width: 75px;
+    height: 75px; }
 
 /*# sourceMappingURL=styles.css.map */
