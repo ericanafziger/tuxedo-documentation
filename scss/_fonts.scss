@@ -29,13 +29,13 @@ h5 {
 }
 
 h6 {
-    @extend %body-font;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: normal;
-    color: $dark-grey;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+  @extend %body-font;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $dark-grey;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 p {
   @extend %body-font;
