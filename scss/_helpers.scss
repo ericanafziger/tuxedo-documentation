@@ -65,15 +65,21 @@
   position: relative;
 }
 
-.mobile-hidden {
-  @media screen and #{$mobile} {
+.tablet-hidden {
+  @media screen and #{$tablet} {
     display: none;
   }
 }
-.mobile-show {
+.tablet-show {
   display: none;
-  @media screen and #{$mobile} {
+  @media screen and #{$tablet} {
     display: block;
+  }
+}
+.tablet-flex {
+  display: none;
+  @media screen and #{$tablet} {
+    display: flex;
   }
 }
 

@@ -347,7 +347,7 @@ nav {
   position: fixed;
   display: none;
   overflow: auto;
-  background-image: linear-gradient(-180deg, #262525 20%, rgba(42, 127, 98, 0.9) 100%);
+  background-image: linear-gradient(-180deg, #262525 20%, rgba(38, 37, 37, 0.9) 100%);
   width: 100%;
   height: 100vh; }
   .flyout .bar {
@@ -369,24 +369,24 @@ nav {
   margin: 20px 0 40px 0;
   list-style: none; }
   .flyout-menu li {
-    width: 180px;
+    width: 280px;
     font-size: 1.6rem;
     text-transform: uppercase;
-    line-height: 5rem;
+    padding: 20px 0;
     margin: 0 auto;
     border-bottom: 3px solid #F4F4F4; }
     .flyout-menu li a {
       text-transform: uppercase;
-      font-size: 1.6rem;
-      line-height: 5rem; }
+      font-size: 1.6rem; }
   .flyout-menu .fly-dropdown .dropdown-menu, .flyout-menu .sub-fly-dropdown .dropdown-menu {
     display: none;
-    padding-bottom: 20px;
-    list-style: none; }
+    list-style: none;
+    padding-bottom: 20px; }
     .flyout-menu .fly-dropdown .dropdown-menu li, .flyout-menu .sub-fly-dropdown .dropdown-menu li {
       border-bottom: none;
       text-align: left;
       font-size: 1rem;
+      padding: 0;
       line-height: 2rem; }
       .flyout-menu .fly-dropdown .dropdown-menu li a, .flyout-menu .sub-fly-dropdown .dropdown-menu li a {
         font-size: 1rem;
@@ -839,15 +839,21 @@ textarea {
 .relative {
   position: relative; }
 
-@media screen and (max-width: 500px) {
-  .mobile-hidden {
+@media screen and (max-width: 760px) {
+  .tablet-hidden {
     display: none; } }
 
-.mobile-show {
+.tablet-show {
   display: none; }
-  @media screen and (max-width: 500px) {
-    .mobile-show {
+  @media screen and (max-width: 760px) {
+    .tablet-show {
       display: block; } }
+
+.tablet-flex {
+  display: none; }
+  @media screen and (max-width: 760px) {
+    .tablet-flex {
+      display: flex; } }
 
 .box-pop {
   border: 2px solid #2A7F62;
@@ -889,6 +895,7 @@ section {
         height: 60px; } }
 
 .code {
+  position: relative;
   font-family: monospace;
   border: 1px solid #C8C8C8;
   background: #F4F4F4;
@@ -897,5 +904,16 @@ section {
   color: #5C5C5C;
   overflow-y: hidden;
   overflow-x: auto; }
+  .code label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #C8C8C8;
+    padding: 10px 30px;
+    font-family: monospace; }
+
+.code-example {
+  max-width: 900px;
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

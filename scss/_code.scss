@@ -1,4 +1,5 @@
 .code {
+  position: relative;
   font-family: monospace;
   border: 1px solid $md-grey;
   background: $light-grey;
@@ -7,4 +8,17 @@
   color: $dark-grey;
   overflow-y: hidden;
   overflow-x: auto;
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $md-grey;
+    padding: 10px 30px;
+    font-family: monospace;
+  }
+}
+
+.code-example {
+  max-width: 900px;
+  margin-bottom: 20px;
 }

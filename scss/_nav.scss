@@ -128,7 +128,7 @@ nav {
   position: fixed;
   display: none;
   overflow: auto;
-  background-image: linear-gradient(-180deg, transparentize($dark, 0) 20%, transparentize($color-pop, 0.1) 100%);
+  background-image: linear-gradient(-180deg, transparentize($dark, 0) 20%, transparentize($dark, 0.1) 100%);
   width: 100%;
   height: 100vh;
   .bar {
@@ -154,27 +154,27 @@ nav {
   margin: 20px 0 40px 0;
   list-style: none;
   li {
-    width: 180px;
+    width: 280px;
     font-size: 1.6rem;
     text-transform: uppercase;
-    line-height: 5rem;
+    padding: 20px 0;
     margin: 0 auto;
     border-bottom: 3px solid $light;
     a {
       text-transform: uppercase;
       font-size: 1.6rem;
-      line-height: 5rem;
     }
   }
   .fly-dropdown, .sub-fly-dropdown {
     .dropdown-menu {
       display: none;
-      padding-bottom: 20px;
       list-style: none;
+      padding-bottom: 20px;
       li {
         border-bottom: none;
         text-align: left;
         font-size: 1rem;
+        padding: 0;
         line-height: 2rem;
         a {
           font-size: 1rem;
