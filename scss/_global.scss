@@ -9,7 +9,7 @@ $light: #f4f4f4; //change global 'light variable'
 $color-pop: #2A7F62; //change global 'color-pop'
 
 //fonts - to update, import a new font below
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700,700i|Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100i,300,400,700,700i|Lato:300,400,700');
 
 //Define font family for header and body font. Must already be imported above
 $header-font: 'Josefin Sans', sans-serif;

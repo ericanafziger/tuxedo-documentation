@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, blockquote {
   font-family: $header-font;
 }
 h1 {
@@ -34,7 +34,7 @@ h6 {
     line-height: 24px;
     font-weight: normal;
     color: $dark-grey;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     letter-spacing: 1px;
 }
 p {
@@ -50,5 +50,20 @@ a {
   text-decoration: none;
   &:hover {
     color: $md-grey;
+  }
+}
+blockquote {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: lighter;
+  max-width: 500px;
+  border-left: 2px solid $dark;
+  padding-left: 30px;
+  line-height: 34px;
+  margin-bottom: 20px;
+  cite {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
   }
 }
