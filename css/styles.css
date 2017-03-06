@@ -403,7 +403,11 @@ nav {
   position: fixed;
   height: 100vh;
   padding: 60px;
-  width: 400px; }
+  max-width: 400px;
+  width: 40%; }
+  @media screen and (max-width: 760px) {
+    .side-bar {
+      display: none; } }
   .side-bar img {
     display: block;
     margin: auto;
@@ -424,8 +428,16 @@ nav {
         color: #F4F4F4; }
 
 .side-bar-content {
-  padding: 60px 145px 30px 500px;
+  padding: 60px 5% 30px 450px;
+  margin: auto;
+  max-width: 1400px;
   min-height: 100vh; }
+  @media screen and (max-width: 1015px) {
+    .side-bar-content {
+      padding-left: 45%; } }
+  @media screen and (max-width: 760px) {
+    .side-bar-content {
+      padding: 40px; } }
 
 canvas {
   display: block; }
@@ -827,6 +839,16 @@ textarea {
 .relative {
   position: relative; }
 
+@media screen and (max-width: 500px) {
+  .mobile-hidden {
+    display: none; } }
+
+.mobile-show {
+  display: none; }
+  @media screen and (max-width: 500px) {
+    .mobile-show {
+      display: block; } }
+
 .box-pop {
   border: 2px solid #2A7F62;
   padding: 40px; }
@@ -872,6 +894,8 @@ section {
   background: #F4F4F4;
   padding: 20px;
   margin-bottom: 20px;
-  color: #5C5C5C; }
+  color: #5C5C5C;
+  overflow-y: hidden;
+  overflow-x: auto; }
 
 /*# sourceMappingURL=styles.css.map */

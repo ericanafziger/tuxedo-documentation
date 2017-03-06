@@ -53,6 +53,8 @@
   margin-bottom: 20px;
 }
 
+// Other helpers
+
 .fixed {
   position: fixed;
 }
@@ -62,6 +64,20 @@
 .relative {
   position: relative;
 }
+
+.mobile-hidden {
+  @media screen and #{$mobile} {
+    display: none;
+  }
+}
+.mobile-show {
+  display: none;
+  @media screen and #{$mobile} {
+    display: block;
+  }
+}
+
+// Border helpers
 
 .box-pop {
   border: 2px solid $color-pop;

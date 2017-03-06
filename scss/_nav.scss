@@ -198,7 +198,11 @@ nav {
   position: fixed;
   height: 100vh;
   padding: 60px;
-  width: 400px;
+  max-width: 400px;
+  width: 40%;
+  @media screen and #{$tablet} {
+    display: none;
+  }
   img {
     display: block;
     margin:auto;
@@ -224,6 +228,14 @@ nav {
   }
 }
 .side-bar-content {
-  padding: 60px 145px 30px 500px;
+  padding: 60px 5% 30px 450px;
+  margin: auto;
+  max-width: 1400px;
   min-height: 100vh;
+  @media screen and ('max-width: 1015px') {
+    padding-left: 45%;
+  }
+  @media screen and #{$tablet} {
+    padding: 40px;
+  }
 }
