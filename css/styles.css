@@ -370,14 +370,14 @@ nav {
   list-style: none; }
   .flyout-menu li {
     width: 280px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     padding: 20px 0;
     margin: 0 auto;
-    border-bottom: 3px solid #F4F4F4; }
+    border-bottom: 2px solid #F4F4F4; }
     .flyout-menu li a {
       text-transform: uppercase;
-      font-size: 1.6rem; }
+      font-size: 1.4rem; }
   .flyout-menu .fly-dropdown .dropdown-menu, .flyout-menu .sub-fly-dropdown .dropdown-menu {
     display: none;
     list-style: none;
@@ -898,7 +898,7 @@ section {
   font-family: monospace;
   border: 1px solid #C8C8C8;
   background: #F4F4F4;
-  padding: 20px;
+  padding: 0 20px;
   margin-bottom: 20px;
   color: #5C5C5C;
   overflow-y: hidden;

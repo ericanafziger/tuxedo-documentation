@@ -74,16 +74,22 @@
         Or you can clone the Tuxedo repo directly from GitHub. Just open up terminal and copy the following code snippet into the command line:
       </p>
       <div class="code">
-        git clone https://github.com/ericanafziger/tuxedo-css
+        <xmp>
+git clone https://github.com/ericanafziger/tuxedo-css
+        </xmp>
       </div>
       <p>
-        Navigate into you project. To get started we are going to watch the Sass component of your project. Now, when you start making changes it will be compiled as CSS. If you already have Sass installed on your machine ignore the first snippet below. Once you are done, open a new terminal window or tab; this Sass watch should be left running anytime you are working on the project.
+        Now that you have your own copy of tuxedo, navigate into the tuxedo folder. To get started, we are going to watch the Sass component of your project. Now, when you start making changes it will be compiled as CSS. If you already have Sass installed on your machine ignore the first snippet below. Once you are done, open a new terminal window or tab; this Sass watch should be left running anytime you are working on the project.
       </p>
       <div class="code">
-        gem install sass
+        <xmp>
+gem install sass
+        </xmp>
       </div>
       <div class="code">
-        sass --watch scss:css
+        <xmp>
+sass --watch scss:css
+        </xmp>
       </div>
       <br>
       <h1 class="text-dark underline-dark">Project Structure</h1>
@@ -93,29 +99,38 @@
       <p>There is an img folder with great high-res images from Unsplash to get your project started.</p>
       <p>Finally, there is the scss folder full of all the components you need for your project. Unlike other frameworks, Tuxedo is design so you can directly edit these file. Code is clearly commented and easy to follow. Start off in the _global.scss folder where you can decide what colors and fonts to use. Tuxedo is designed to have several neutral colors and then one pop of color to keep your site looking beautiful.</p>
       <div class="code">
-        tuxedo-css/<br>
-        |--scss /<br>
-        |  |--_animations.scss<br>
-        |  |--_buttons.scss<br>
-        |  |--_fonts.scss<br>
-        |  |--_forms.scss<br>
-        |  |--_global.scss<br>
-        |  |--_grid.scss<br>
-        |  |--_helpers.scss<br>
-        |  |--_hero.scss<br>
-        |  |--_mediaQueries.scss<br>
-        |  |--_nav.scss<br>
-        |  |--_reset.scss<br>
-        |  |--_threejs.scss<br>
-        |  |--_styles.scss<br>
-        |<br>
-        |--js/<br>
-        |  |--tuxedo.js<br>
-        |  |--scripts.js<br>
-        |<br>
-        |--img<br>
-        |<br>
-        |--index.html<br>
+        <xmp>
+tuxedo-css/
+
+|--scss /
+
+|  |--_animations.scss
+|  |--_buttons.scss
+|  |--_fonts.scss
+|  |--_forms.scss
+|  |--_global.scss
+|  |--_grid.scss
+|  |--_helpers.scss
+|  |--_hero.scss
+|  |--_mediaQueries.scss
+|  |--_nav.scss
+|  |--_reset.scss
+|  |--_threejs.scss
+|  |--_styles.scss
+|
+
+|--js/
+
+|  |--tuxedo.js
+|  |--scripts.js
+|
+
+|--img
+|
+|--index.html
+
+      </xmp>
+
       </div>
       <br>
       <h1 class="text-dark underline-dark">Download One Component at a Time</h1>
