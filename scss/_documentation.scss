@@ -67,3 +67,26 @@
     max-height: 700px;
   }
 }
+
+//Styles sidebar for documentation
+.side-bar.example {
+  max-height: 500px;
+  max-width: 200px;
+  padding: 40px 20px;
+  width: 30%;
+  @media screen and #{$tablet} {
+    display: block;
+  }
+}
+.side-bar-content.example {
+  width: 100%;
+  min-height: 500px;
+  max-height: 500px;
+  overflow: auto;
+  padding-left: 250px;
+  padding-top: 40px;
+  background: $light;
+  @media screen and #{$tablet} {
+    padding-left: 45%;
+  }
+}
