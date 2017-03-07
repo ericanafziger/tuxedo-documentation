@@ -32,8 +32,11 @@
 .text-dark {
   color: $dark;
 }
-.text-grey {
+.text-md-grey {
   color: $md-grey;
+}
+.text-dark-grey {
+  color: $dark-grey;
 }
 .text-light {
   color: $light;
@@ -41,25 +44,11 @@
 .text-pop {
   color: $color-pop;
 }
-
 .text-center {
   text-align: center;
 }
 
-.underline-dark {
-  border-bottom: 2px solid $dark;
-  margin-bottom: 20px;
-}
-.underline-light {
-  border-bottom: 2px solid $light;
-  margin-bottom: 20px;
-}
-.underline-pop {
-  border-bottom: 2px solid $color-pop;
-  margin-bottom: 20px;
-}
-
-// Other helpers
+// Position helpers
 
 .fixed {
   position: fixed;
@@ -71,7 +60,8 @@
   position: relative;
 }
 
-.tablet-hidden {
+// Media Query helpers
+.tablet-hide {
   @media screen and #{$tablet} {
     display: none;
   }
@@ -85,6 +75,23 @@
 .tablet-flex {
   display: none;
   @media screen and #{$tablet} {
+    display: flex;
+  }
+}
+.mobile-hide {
+  @media screen and #{$mobile} {
+    display: none;
+  }
+}
+.mobile-show {
+  display: none;
+  @media screen and #{$mobile} {
+    display: block;
+  }
+}
+.mobile-flex {
+  display: none;
+  @media screen and #{$mobile} {
     display: flex;
   }
 }
@@ -115,4 +122,17 @@
 .border-left-light {
   border-left: 2px solid $light;
   padding-left: 40px;
+}
+
+.underline-dark {
+  border-bottom: 2px solid $dark;
+  margin-bottom: 20px;
+}
+.underline-light {
+  border-bottom: 2px solid $light;
+  margin-bottom: 20px;
+}
+.underline-pop {
+  border-bottom: 2px solid $color-pop;
+  margin-bottom: 20px;
 }

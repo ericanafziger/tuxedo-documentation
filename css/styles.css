@@ -826,8 +826,11 @@ textarea {
 .text-dark {
   color: #262525; }
 
-.text-grey {
+.text-md-grey {
   color: #c8c8c8; }
+
+.text-dark-grey {
+  color: #5c5c5c; }
 
 .text-light {
   color: #f4f4f4; }
@@ -837,18 +840,6 @@ textarea {
 
 .text-center {
   text-align: center; }
-
-.underline-dark {
-  border-bottom: 2px solid #262525;
-  margin-bottom: 20px; }
-
-.underline-light {
-  border-bottom: 2px solid #f4f4f4;
-  margin-bottom: 20px; }
-
-.underline-pop {
-  border-bottom: 2px solid #2A7F62;
-  margin-bottom: 20px; }
 
 .fixed {
   position: fixed; }
@@ -860,7 +851,7 @@ textarea {
   position: relative; }
 
 @media screen and (max-width: 760px) {
-  .tablet-hidden {
+  .tablet-hide {
     display: none; } }
 
 .tablet-show {
@@ -873,6 +864,22 @@ textarea {
   display: none; }
   @media screen and (max-width: 760px) {
     .tablet-flex {
+      display: flex; } }
+
+@media screen and (max-width: 500px) {
+  .mobile-hide {
+    display: none; } }
+
+.mobile-show {
+  display: none; }
+  @media screen and (max-width: 500px) {
+    .mobile-show {
+      display: block; } }
+
+.mobile-flex {
+  display: none; }
+  @media screen and (max-width: 500px) {
+    .mobile-flex {
       display: flex; } }
 
 .box-pop {
@@ -898,6 +905,18 @@ textarea {
 .border-left-light {
   border-left: 2px solid #f4f4f4;
   padding-left: 40px; }
+
+.underline-dark {
+  border-bottom: 2px solid #262525;
+  margin-bottom: 20px; }
+
+.underline-light {
+  border-bottom: 2px solid #f4f4f4;
+  margin-bottom: 20px; }
+
+.underline-pop {
+  border-bottom: 2px solid #2A7F62;
+  margin-bottom: 20px; }
 
 .animate-in {
   opacity: 0; }
