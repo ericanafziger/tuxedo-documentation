@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100i,300i,400,700|Raleway:300,400');
+
+
+.code {
+  position: relative;
+  font-family: monospace;
+  border: 1px solid $md-grey;
+  background: $light-grey;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  color: $dark-grey;
+  overflow-y: hidden;
+  overflow-x: auto;
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $md-grey;
+    padding: 10px 30px;
+    font-family: monospace;
+  }
+}
+
+.code-example {
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+
+.palette {
+  display: flex;
+  .palette-color {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif
+}
+.raleway {
+  font-family: 'Raleway', sans-serif
+}

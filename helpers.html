@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuxedo CSS - Helper Classes</title>
+    <link rel="stylesheet" href="css/styles.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/tuxedo.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav class="nav-dark relative tablet-flex"> 
+      <header> 
+        <img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> 
+      </header>
+    	<ul class="mobile-nav flex-center"> 
+        <div class="hamburger"></div> 
+      </ul>
+      <div class="flyout">
+    	  <div class="bar"> 
+          <header class="text-light f-col-4"> 
+            <img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> 
+          </header> 
+          <div class="close f-col-1"></div> 
+        </div>
+        <ul class="flyout-menu"> 
+          <li><a href="start.html">Getting Started</a></li>
+          <li><a href="animations.html">Animations</a></li>
+          <li><a href="buttons.html">Buttons</a></li>
+          <li><a href="colors.html">Colors</a></li>
+          <li><a href="fonts.html">Fonts</a></li>
+          <li><a href="forms.html">Forms</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li><a href="helpers.html">Helpers</a></li>
+          <li><a href="hero.html">Hero</a></li>
+          <li><a href="nav.html">Nav</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="side-bar bg-dark">
+      <head>
+        <a href="index.html"><img src="img/thin-logo-large.svg" alt="tuxedo logo"></a>
+      </head>
+      <ul class="underline-light">
+        <li><a href="start.html">Getting Started</a></li>
+        <li><a href="animations.html">Animations</a></li>
+        <li><a href="buttons.html">Buttons</a></li>
+        <li><a href="colors.html">Colors</a></li>
+        <li><a href="fonts.html">Fonts</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="grid.html">Grid</a></li>
+        <li class="active"><a href="helpers.html">Helpers</a></li>
+        <li><a href="hero.html">Hero</a></li>
+        <li><a href="nav.html">Nav</a></li>
+      </ul>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="side-bar-content">
+      <h1 class="text-dark underline-dark">Helpers</h1>
+      <h3>Shortcuts</h3>
+      <div class="border-left-pop">
+        <h4><a href="#background">Background Helpers</a></h4>
+        <h4><a href="#text">Text Helpers</a></h4>
+        <h4><a href="#border">Border Helpers</a></h4>
+        <h4><a href="#position">Position Helpers</a></h4>
+        <h4><a href="#media">Media Query Helpers</a></h4>
+        <h4><a href="#flex">Flex Helpers</a></h4>
+      </div>
+      <br>
+      <p>
+        Tuxedo comes with a variety of helper classes to help make your code cleaner. These classes are reusable styles that can be paired with a various predefined tuxedo elements.
+      </p>
+
+      <h3 id="background" class="text-dark">Background Helpers</h3>
+      <p>Background helpers allow you to add a background with a quick class addition. Simply add the class to the element you would like to give a background.</p>
+
+      <div class="code-example">
+        <div class="text-light bg-dark">
+          <h4>This div has a dark background</h4>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+<div class="bg-dark"></div>
+        </xmp>
+      </div>
+
+      <div class="code-example">
+        <div class="bg-light">
+          <h4>This div has a light background</h4>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+<div class="bg-light"></div>
+        </xmp>
+      </div>
+
+      <div class="code-example">
+        <div class="text-light bg-pop">
+          <h4>This div has a pop-of-color background</h4>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+<div class="bg-pop"></div>
+        </xmp>
+      </div>
+
+      <div class="code-example">
+        <div class="text-light bg-dark-grey">
+          <h4>This div has a dark-grey background</h4>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+<div class="bg-dark-grey"></div>
+        </xmp>
+      </div>
+
+      <div class="code-example">
+        <div class="text-light bg-md-grey">
+          <h4>This div has a medium-grey background</h4>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+<div class="bg-md-grey"></div>
+        </xmp>
+      </div>
+
+      <div class="code-example">
+        <div class="text-light bg-t-dark">
+          <h4>This div has a transparent, dark background</h4>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+<div class="bg-t-dark"></div>
+        </xmp>
+      </div>
+
+      <div class="code-example">
+        <div class="bg-t-light">
+          <h4>This div has a transparent, light background</h4>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+<div class="bg-t-light"></div>
+        </xmp>
+      </div>
+
+      <div class="code-example">
+        <div class="text-light bg-t-pop">
+          <h4>This div has a transparent, pop-of-color background</h4>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+<div class="bg-t-pop"></div>
+        </xmp>
+      </div>
+
+
+      <h3 id="text" class="text-dark">Text Helpers</h3>
+      <p>Text helpers allow you to easy style your text in specific areas without overriding other classes and ids. Just add the class to the text element you would like to give a color makeover.</p>
+
+      <div class="code-example">
+        <h4 class="text-dark">Dark Text</h4>
+        <h4 class="text-dark-grey">Dark Grey Text</h4>
+        <h4 class="text-md-grey">Medium Grey Text</h4>
+        <h4 class="bg-md-grey text-light">Light Text</h4>
+        <h4 class="text-pop">Color Pop Text</h4>
+      </div>
+      <div class="code">
+        <xmp>
+<h4 class="text-dark">Dark Text</h4>
+<h4 class="text-dark-grey">Dark Grey Text</h4>
+<h4 class="text-md-grey">Medium Grey Text</h4>
+<h4 class="bg-md-grey text-light">Light Text</h4>
+<h4 class="text-pop">Color Pop Text</h4>
+        </xmp>
+      </div>
+
+      <div class="code-example">
+        <h4 class="text-dark text-center">Centered Text</h4>
+      </div>
+      <div class="code">
+        <xmp>
+<h4 class="text-center">Centered Text</h4>
+        </xmp>
+      </div>
+
+      <h3 id="border" class="text-dark">Border Helpers</h3>
+      <p>Border helpers allow quick additions of borders for callouts or additional emphasis.</p>
+      <div class="code-example">
+        <div class="box-dark">
+          <p><strong>Content within a dark border box</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+        </div>
+        <br>
+        <div class="box-light">
+          <p><strong>Content within a light border box</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+        </div>
+        <br>
+        <div class="box-pop">
+          <p><strong>Content within a pop-of-color border box</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+<div class="box-dark">
+  Your content here
+</div>
+
+<div class="box-light">
+  Your content here
+</div>
+
+<div class="box-pop">
+  Your content here
+</div>
+        </xmp>
+      </div>
+
+      <div class="code-example">
+        <div class="border-left-dark">
+          <p>
+            <strong>Content with dark border left</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+          </p>
+        </div>
+        <div class="border-left-light">
+          <p>
+            <strong>Content with light border left</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+          </p>
+        </div>
+        <div class="border-left-pop">
+          <p>
+            <strong>Content with pop border left</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+          </p>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+<div class="border-left-dark">
+    Your content here
+</div>
+
+<div class="border-left-light">
+    Your content here
+</div>
+
+<div class="border-left-pop">
+    Your content here
+</div>
+        </xmp>
+      </div>
+
+      <div class="code-example">
+        <div class="underline-dark">
+          <p>
+            <strong>Content with dark underline</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="underline-light">
+          <p>
+            <strong>Content with light underline</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="underline-pop">
+          <p>
+            <strong>Content with pop-of-color underline</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <div class="code">
+        <xmp>
+<div class="underline-dark">
+  Your content here
+</div>
+
+<div class="underline-light">
+  Your content here
+</div>
+
+<div class="underline-pop">
+  Your content here
+</div>
+        </xmp>
+      </div>
+
+      <h3 id="position" class="text-dark">Position Helpers</h3>
+      <p>Add these classes to elements to directly change their positioning. Position helpers work great paired with navbars. Change a navbar a fixed nav by adding the <code>.fixed</code> class, or have it start above the content with the <code>.relative</code>. The <code>.absolute</code> position is also available and works especially well for items already within a relative container.</p>
+
+      <div class="code">
+        <xmp>
+<nav class="nav-dark fixed">
+  (...)
+</nav>
+
+<nav class="nav-dark relative">
+  (...)
+</nav>
+
+<nav class="nav-dark absolute">
+  (...)
+</nav>
+        </xmp>
+      </div>
+
+      <h3 id="media" class="text-dark">Media Query Helpers</h3>
+      <p>In certain senarios it can be helpful to hide or show a block of code based on media queries. If that's where you find yourself, these are the helper classes for you. The flex extension allows elements to be <code>display: flex</code> rather than <code>display: block</code> for elements using flexbox.</p>
+
+      <div class="code">
+        <xmp>
+//For tablet
+
+<div class="tablet-show">
+  Items are displayed on tablet and mobile screen sizes and hidden on desktop.
+</div>
+
+<div class="tablet-hide">
+  Items are displayed on desktop, but not on tablet and mobile screen sizes.
+</div>
+
+<div class="tablet-flex">
+  Elements are displayed as flex containers on tablet and mobile screen sizes and hidden on desktop.
+</div>
+
+//For mobile
+
+<div class="mobile-show">
+  Items are displayed on mobile screen sizes and hidden on desktop and tablet.
+</div>
+
+<div class="mobile-hide">
+  Items are displayed on desktop and tablet, but not on mobile screen sizes.
+</div>
+
+<div class="mobile-flex">
+  Elements are displayed as flex containers on mobile screen sizes and hidden on desktop and tablet.
+</div>
+        </xmp>
+      </div>
+
+      <h3 id="flex" class="text-dark">Flex Helpers</h3>
+      <p>Flex helpers are designed to be paired with flexed containers. To see an example of these guys in action visit the <strong><a class="text-pop" href="grid.html">flex grid</a></strong> documentation.</p>
+      <p>
+        The flex helpers are: <code>.flex-center</code>, <code>.flex-center-h</code>, <code>.flex-center-v</code>, <code>.flex-end</code>, <code>.flex-end-h</code>, <code>.flex-end-v</code>.
+      </p>
+
+      <div class="code">
+        <xmp>
+<div class="f-row responsive">
+
+  <div class="f-col-1 flex-center">
+    Content will be centered on horizontal and vertical axes.
+  </div>
+
+  <div class="f-col-1 flex-center-h">
+    Content will be centered on horizontal axis.
+  </div>
+
+  <div class="f-col-1 flex-center-v">
+    Content will be centered on vertical axis.
+  </div>
+
+  <div class="f-col-1 flex-end">
+    Content will be centered at the end of the horizontal and vertical axes.
+  </div>
+
+  <div class="f-col-1 flex-end-h">
+    Content will be centered at the end of the horizontal axis and beginning of the vertical axis.
+  </div>
+
+  <div class="f-col-1 flex-end-v">
+    Content will be centered at the end of the vertical axis and beginning of the horizontal axis.
+  </div>
+
+</div>
+        </xmp>
+      </div>
+
+  </body>
+</html>
