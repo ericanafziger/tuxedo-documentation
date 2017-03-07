@@ -401,6 +401,7 @@ nav {
 .side-bar {
   font-family: "Josefin Sans", sans-serif;
   position: fixed;
+  overflow: auto;
   height: 100vh;
   padding: 60px;
   max-width: 400px;
@@ -431,8 +432,7 @@ nav {
   padding: 60px 5% 30px 450px;
   margin: auto;
   max-width: 1400px;
-  min-height: 100vh;
-  margin-bottom: 100px; }
+  min-height: 100vh; }
   @media screen and (max-width: 1015px) {
     .side-bar-content {
       padding-left: 45%; } }

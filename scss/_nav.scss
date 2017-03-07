@@ -203,6 +203,7 @@ nav {
 .side-bar {
   font-family: $header-font;
   position: fixed;
+  overflow: auto;
   height: 100vh;
   padding: 60px;
   max-width: 400px;
@@ -239,7 +240,6 @@ nav {
   margin: auto;
   max-width: 1400px;
   min-height: 100vh;
-  margin-bottom: 100px;
   @media screen and ('max-width: 1015px') {
     padding-left: 45%;
   }

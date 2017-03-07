@@ -353,7 +353,7 @@
       <h3 id="flex" class="text-dark">Flex Helpers</h3>
       <p>Flex helpers are designed to be paired with flexed containers. To see an example of these guys in action visit the <strong><a class="text-pop" href="grid.html">flex grid</a></strong> documentation.</p>
       <p>
-        The flex helpers are: <code>.flex-center</code>, <code>.flex-center-h</code>, <code>.flex-center-v</code>, <code>.flex-end</code>, <code>.flex-end-h</code>, <code>.flex-end-v</code>.
+        The flex helpers are: <code>.flex-center</code>, <code>.flex-center-h</code>, <code>.flex-center-v</code>, <code>.flex-end</code>, <code>.flex-end-h</code>, <code>.flex-end-v</code>, <code>.flex-center-end</code>.
       </p>
 
       <div class="code">
@@ -373,20 +373,30 @@
   </div>
 
   <div class="f-col-1 flex-end">
-    Content will be centered at the end of the horizontal and vertical axes.
+    Content will be placed at the end of the horizontal and vertical axes.
   </div>
 
   <div class="f-col-1 flex-end-h">
-    Content will be centered at the end of the horizontal axis and beginning of the vertical axis.
+    Content will be placed at the end of the horizontal axis and beginning of the vertical axis.
   </div>
 
   <div class="f-col-1 flex-end-v">
-    Content will be centered at the end of the vertical axis and beginning of the horizontal axis.
+    Content will be placed at the end of the vertical axis and beginning of the horizontal axis.
+  </div>
+
+  <div class="f-col-1 flex-center-end">
+    Content will be centered on the vertical axis and placed at the end of the horizontal axis.
   </div>
 
 </div>
         </xmp>
       </div>
-
+    </div>
+    <footer class="f-row">
+        <small class="f-col-1 flex-center-v">2017 Erica Nafziger, All rights reserved.
+        </small>
+        <small class="f-col-1 flex-center-end">MIT License
+        </small>
+    </footer>
   </body>
 </html>
