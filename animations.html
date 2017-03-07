@@ -9,33 +9,41 @@
     <script src="js/tuxedo.js" charset="utf-8"></script>
   </head>
   <body>
-    <nav class="nav-dark relative tablet-flex"> 
+    <nav class="nav-dark fixed tablet-flex"> 
       <header> 
-        <img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> 
+        <a href="index.html"><img src="img/logo-thick-light.svg" alt="Tuxedo Logo"></a>
       </header>
     	<ul class="mobile-nav flex-center"> 
         <div class="hamburger"></div> 
       </ul>
       <div class="flyout">
     	  <div class="bar"> 
-          <header class="text-light f-col-4"> 
-            <img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> 
+          <header class="f-col-4"> 
+            <a href="index.html"><img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> </a>
           </header> 
           <div class="close f-col-1"></div> 
         </div>
         <ul class="flyout-menu"> 
-          <li><a href="start.html">Getting Started</a></li>
-          <li><a href="animations.html">Animations</a></li>
-          <li><a href="buttons.html">Buttons</a></li>
-          <li><a href="colors.html">Colors</a></li>
-          <li><a href="fonts.html">Fonts</a></li>
-          <li><a href="forms.html">Forms</a></li>
-          <li><a href="grid.html">Grid</a></li>
-          <li><a href="helpers.html">Helpers</a></li>
-          <li><a href="hero.html">Hero</a></li>
-          <li><a href="nav.html">Nav</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Getting Started</a></li> 
+          <li class="fly-dropdown">Docs +
+            <ul class="dropdown-menu">
+              <li><a href="animations.html">Animations</a></li>
+              <li><a href="buttons.html">Buttons</a></li>
+              <li><a href="colors.html">Colors</a></li>
+              <li><a href="fonts.html">Fonts</a></li>
+              <li><a href="forms.html">Forms</a></li>
+              <li><a href="grid.html">Grid</a></li>
+              <li><a href="helpers.html">Helpers</a></li>
+              <li><a href="hero.html">Hero</a></li>
+              <li><a href="nav.html">Nav</a></li>
+            </ul>
+          </li> 
+          <li class="fly-dropdown"><a href="#">About +</a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html">Why Tuxedo?</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>

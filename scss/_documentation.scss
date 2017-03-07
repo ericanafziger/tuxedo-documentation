@@ -40,3 +40,21 @@
 .raleway {
   font-family: 'Raleway', sans-serif
 }
+
+//Nav bar overrides
+#basic-nav-example, #nav-dropdowns-example, #nav-dropsub-example, #mobile-nav-example, #mobile-nav-drop-example, #nav-helper-1,#nav-helper-2,#nav-helper-3,#nav-helper-4,#nav-helper-5,#nav-helper-6 {
+  z-index: 1;
+}
+
+.hamburger-2 {
+  display: none;
+  position: relative;
+  background: url('data:image/svg+xml;utf8,<svg width="27px" height="21px" viewBox="299 11 27 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" fill="none" transform="translate(301.000000, 13.000000)" stroke-linecap="round" stroke-width="1" fill-rule="evenodd"><g id="Nav/Menu" stroke="#F4F4F4"><path d="M0.409326823,1.5 L22.5119031,1.5" stroke-width="3"></path><path d="M0.409326823,8.5 L22.5119031,8.5" stroke-width="3"></path><path d="M0.409326823,15.5 L22.5119031,15.5" stroke-width="3"></path></g></g></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 21px;
+  width: 27px;
+  @media screen and #{$tablet} {
+    display: block;
+  }
+}

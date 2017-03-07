@@ -7,35 +7,44 @@
     <link rel="stylesheet" href="css/styles.css">
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="js/tuxedo.js" charset="utf-8"></script>
+    <script src="js/tuxedo-documentation.js" charset="utf-8"></script>
   </head>
   <body>
-    <nav class="nav-dark relative tablet-flex">
+    <nav class="nav-dark fixed tablet-flex"> 
       <header> 
-        <img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> 
+        <a href="index.html"><img src="img/logo-thick-light.svg" alt="Tuxedo Logo"></a>
       </header>
-    	<ul class="mobile-nav flex-center"> 
+      <ul class="mobile-nav flex-center"> 
         <div class="hamburger"></div> 
       </ul>
       <div class="flyout">
-    	  <div class="bar"> 
-          <header class="text-light f-col-4"> 
-            <img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> 
+        <div class="bar"> 
+          <header class="f-col-4"> 
+            <a href="index.html"><img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> </a>
           </header> 
           <div class="close f-col-1"></div> 
         </div>
         <ul class="flyout-menu"> 
-          <li><a href="start.html">Getting Started</a></li>
-          <li><a href="animations.html">Animations</a></li>
-          <li><a href="buttons.html">Buttons</a></li>
-          <li><a href="colors.html">Colors</a></li>
-          <li><a href="fonts.html">Fonts</a></li>
-          <li><a href="forms.html">Forms</a></li>
-          <li><a href="grid.html">Grid</a></li>
-          <li><a href="helpers.html">Helpers</a></li>
-          <li><a href="hero.html">Hero</a></li>
-          <li><a href="nav.html">Nav</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Getting Started</a></li> 
+          <li class="fly-dropdown">Docs +
+            <ul class="dropdown-menu">
+              <li><a href="animations.html">Animations</a></li>
+              <li><a href="buttons.html">Buttons</a></li>
+              <li><a href="colors.html">Colors</a></li>
+              <li><a href="fonts.html">Fonts</a></li>
+              <li><a href="forms.html">Forms</a></li>
+              <li><a href="grid.html">Grid</a></li>
+              <li><a href="helpers.html">Helpers</a></li>
+              <li><a href="hero.html">Hero</a></li>
+              <li><a href="nav.html">Nav</a></li>
+            </ul>
+          </li> 
+          <li class="fly-dropdown"><a href="#">About +</a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html">Why Tuxedo?</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>
@@ -53,11 +62,11 @@
         <li><a href="grid.html">Grid</a></li>
         <li><a href="helpers.html">Helpers</a></li>
         <li><a href="hero.html">Hero</a></li>
-        <li class="active"><a href="#">Nav</a></li>
+        <li class="active"><a href="nav.html">Nav</a></li>
       </ul>
       <ul>
         <li><a href="about.html">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div class="side-bar-content">
@@ -69,7 +78,7 @@
       <h3 class="text-dark">Basic Nav</h3>
       <p>The basic nav is…you guessed it…pretty basic. But it can be a good place to get started. Just copy this code into the body of your html. I’d suggest at the very top, but that’s for you to decide.</p>
       <div class="code-example">
-        <nav class="nav-dark relative"> 
+        <nav id="basic-nav-example" class="nav-dark relative"> 
           <header> 
             <img src="img/logo-thick-light.svg" alt="Tuxedo Logo">
           </header>
@@ -110,7 +119,7 @@
       <h3 class="text-dark">Nav with Dropdowns</h3>
       <p>Now we are going to get a bit more sophisticated. This nav has dropdowns. Just add a little plus or another image or symbol of your choosing to the <code>li</code> text to let your users know there is more information tucked away.  Full code below!</p>
       <div class="code-example">
-        <nav class="nav-ghost-dark relative"> 
+        <nav id="nav-dropdowns-example" class="nav-ghost-dark relative"> 
           <header> 
             <img src="img/logo-thick-dark.svg" alt="Tuxedo Logo">
           </header>
@@ -162,7 +171,7 @@
       <h3 class="text-dark">Nav with Dropdowns & Sub-Dropdowns</h3>
       <p>If you want to keep your dropdown’s rolling this is the menu for you. Nest a dropdown on a link inside another dropdown. Just remember you don’t want things to get too complex for your user to navigate!</p>
       <div class="code-example">
-        <nav class="nav-pop relative"> 
+        <nav id="nav-dropsub-example" class="nav-pop relative"> 
           <header> 
             <img src="img/logo-thick-light.svg" alt="Tuxedo Logo">
           </header>
@@ -225,7 +234,7 @@
       <h3 class="text-dark">Mobile Nav</h3>
       <p>Use this navigation to ensure users on mobile devices will be able to easily use your navigation.  This nav displays like normal until you get to tablet size. Links will disappear and be replaced by the hamburger icon. JavaScript initiation is required for the mobile nav to work properly. After pasting the code into your HTML paste the following JavaScript into the bottom of your js/tuxedo.js file where specified.</p>
       <div class="code-example">
-        <nav class="nav-dark relative"> 
+        <nav id="mobile-nav-example" class="nav-dark relative"> 
           <header> 
             <img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> 
           </header>
@@ -235,7 +244,7 @@
             <li class="f-col-1 flex-center"><a href="#">Work</a></li> 
           </ul>
         	<ul class="mobile-nav flex-center"> 
-            <div class="hamburger"></div> 
+            <div class="hamburger-2"></div> 
           </ul>
           <div class="flyout">
         	  <div class="bar"> 
@@ -245,9 +254,9 @@
               <div class="close f-col-1"></div> 
             </div>
             <ul class="flyout-menu"> 
-              <li><a href="#">Home</a></li> 
-              <li><a href="#">Shop</a></li> 
-              <li><a href="#">Work</a></li> 
+              <li>Home</li> 
+              <li>Shop</li> 
+              <li>Work</li> 
             </ul>
           </div>
         </nav>
@@ -294,7 +303,7 @@
       <h3 class="text-dark">Mobile Nav with Dropdowns</h3>
       <p>So you put a dropdown on your main nav and you think it would be neat to have them on your mobile menu as well. The following snippet includes the code for the whole nav - desktop and mobile version included. Make sure you’ve initiated that JavaScript for everything to work correctly!</p>
       <div class="code-example">
-        <nav class="nav-pop relative">
+        <nav id="mobile-nav-drop-example" class="nav-pop relative">
           <header class="text-light"><img src="img/logo-thick-light.svg" alt="Tuxedo Logo">
           </header>
           <ul class="menu-items">
@@ -315,7 +324,7 @@
             <a href="#" class="f-col-1 flex-center"><li>Cart</li></a>
           </ul>
           <ul class="mobile-nav flex-center">
-            <div class="hamburger"></div>
+            <div class="hamburger-2"></div>
           </ul>
           <div class="flyout">
             <div class="bar">
@@ -325,12 +334,12 @@
             </div>
             <ul class="flyout-menu">
               <li><a href="#">Home</a></li>
-              <li class="fly-dropdown"><a href="#">Shop +</a>
+              <li class="fly-dropdown"><a>Shop +</a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Women's</a></li>
-                  <li><a href="#">Men's</a></li>
-                  <li><a href="#">Kid's</a></li>
-                  <li><a href="#">Sale</a></li>
+                  <li><a>Women's</a></li>
+                  <li><a>Men's</a></li>
+                  <li><a>Kid's</a></li>
+                  <li><a>Sale</a></li>
                 </ul>
               </li>
               <li><a href="#">Cart</a></li>
@@ -397,7 +406,7 @@
       <h3 class="text-dark">Nav Helper Classes</h3>
       <p>Navs come with a variety of helper classes to add variety to your webpages. The following snippets show you which classes change the base styling of your nav bar.</p>
       <div class="code-example">
-        <nav class="nav-dark relative"> 
+        <nav id="nav-helper-1" class="nav-dark relative"> 
           <header> 
             <img src="img/logo-thick-light.svg" alt="Tuxedo Logo">
           </header>
@@ -425,7 +434,7 @@
       </div>
 
       <div class="code-example">
-        <nav class="nav-light relative"> 
+        <nav id="nav-helper-2" class="nav-light relative"> 
           <header> 
             <img src="img/logo-thick-dark.svg" alt="Tuxedo Logo">
           </header>
@@ -453,7 +462,7 @@
       </div>
 
       <div class="code-example">
-        <nav class="nav-pop relative"> 
+        <nav id="nav-helper-3" class="nav-pop relative"> 
           <header> 
             <img src="img/logo-thick-light.svg" alt="Tuxedo Logo">
           </header>
@@ -481,7 +490,7 @@
       </div>
 
       <div class="code-example">
-        <nav class="nav-ghost-dark relative"> 
+        <nav id="nav-helper-4" class="nav-ghost-dark relative"> 
           <header> 
             <img src="img/logo-thick-dark.svg" alt="Tuxedo Logo">
           </header>
@@ -510,7 +519,7 @@
 
       <div class="bg-dark">
         <div class="code-example">
-          <nav class="nav-ghost-light relative"> 
+          <nav id="nav-helper-5" class="nav-ghost-light relative"> 
             <header> 
               <img src="img/logo-thick-light.svg" alt="Tuxedo Logo">
             </header>
@@ -539,7 +548,7 @@
       </div>
 
       <div class="code-example">
-        <nav class="nav-ghost-pop relative"> 
+        <nav id="nav-helper-6" class="nav-ghost-pop relative"> 
           <header> 
             <img src="img/logo-thick-pop.svg" alt="Tuxedo Logo">
           </header>
