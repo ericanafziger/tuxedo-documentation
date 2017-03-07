@@ -58,3 +58,12 @@
     display: block;
   }
 }
+
+//Adjusts hero height for documentation purposes{
+.hero {
+  min-height: auto;
+  max-height: 700px;
+  &-image {
+    max-height: 700px;
+  }
+}
