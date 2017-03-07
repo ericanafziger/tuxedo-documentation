@@ -164,33 +164,6 @@ blockquote {
 .f-col-4 {
   flex: 4; }
 
-[class*='flex-center'], [class*='flex-end'] {
-  display: flex; }
-
-.flex-center {
-  justify-content: center;
-  align-items: center; }
-
-.flex-center-h {
-  align-items: center;
-  justify-content: flex-start; }
-
-.flex-center-v {
-  justify-content: center;
-  align-items: flex-start; }
-
-.flex-end-v {
-  justify-content: flex-end;
-  align-items: flex-start; }
-
-.flex-end-h {
-  align-items: flex-end;
-  justify-content: flex-start; }
-
-.flex-end {
-  justify-content: flex-end;
-  align-items: flex-end; }
-
 @media screen and (max-width: 500px) {
   .responsive .f-col-1, .responsive .f-col-2 {
     flex: 100%; } }
@@ -917,6 +890,33 @@ textarea {
 .underline-pop {
   border-bottom: 2px solid #2A7F62;
   margin-bottom: 20px; }
+
+[class*='flex-center'], [class*='flex-end'] {
+  display: flex; }
+
+.flex-center {
+  justify-content: center;
+  align-items: center; }
+
+.flex-center-h {
+  align-items: center;
+  justify-content: flex-start; }
+
+.flex-center-v {
+  justify-content: center;
+  align-items: flex-start; }
+
+.flex-end-v {
+  justify-content: flex-end;
+  align-items: flex-start; }
+
+.flex-end-h {
+  align-items: flex-end;
+  justify-content: flex-start; }
+
+.flex-end {
+  justify-content: flex-end;
+  align-items: flex-end; }
 
 .animate-in {
   opacity: 0; }

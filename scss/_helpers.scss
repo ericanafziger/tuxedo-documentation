@@ -136,3 +136,33 @@
   border-bottom: 2px solid $color-pop;
   margin-bottom: 20px;
 }
+
+
+// flex helper classes to add to flexed elements
+[class*='flex-center'], [class*='flex-end'] {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-center-h {
+  align-items: center;
+  justify-content: flex-start;
+}
+.flex-center-v {
+  justify-content: center;
+  align-items: flex-start;
+}
+.flex-end-v {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.flex-end-h {
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.flex-end {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
