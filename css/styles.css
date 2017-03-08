@@ -1122,4 +1122,8 @@ footer {
 canvas {
   max-height: 700px; }
 
+.noStyle {
+  padding: 0;
+  margin: 0; }
+
 /*# sourceMappingURL=styles.css.map */
