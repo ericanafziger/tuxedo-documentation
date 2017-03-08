@@ -1,6 +1,16 @@
+.canvas-container {
+  position: relative;
+  .canvas-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+  }
+}
+
+
 canvas {
   display: block;
-}
-#three-canvas {
-  position: absolute;
+  max-width: 100%;
 }
