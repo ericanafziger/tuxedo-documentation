@@ -4,7 +4,7 @@ Tuxedo is modern, simplified framework designed to bring some class to your app.
 ## Getting started
 
 There are a couple ways to download and begin working with Tuxedo:
-- [Visit http://ericanafziger.github.io/tuxedo-documentation](http://ericanafziger.github.io/tuxedo-documentation) to get started.
+- [Visit http://ericanafziger.github.io/tuxedo-documentation](https://ericanafziger.github.io/tuxedo-documentation/) to get started.
 
 ### What's in the download?
 
