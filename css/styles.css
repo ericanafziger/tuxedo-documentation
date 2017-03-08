@@ -1122,4 +1122,7 @@ section {
     .side-bar-content.example {
       padding-left: 45%; } }
 
+canvas {
+  max-height: 700px; }
+
 /*# sourceMappingURL=styles.css.map */
