@@ -478,7 +478,7 @@ nav {
       border-top: 1px solid #f4f4f4;
       padding-top: 10px;
       list-style: none;
-      margin-left: 20px; }
+      padding-left: 20px; }
 
 .fly-dropdown .dropdown-menu {
   margin-top: 10px; }
