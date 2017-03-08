@@ -9,7 +9,7 @@ body {
   font-size: 16px;
   line-height: 1; }
 
-h6, p, small, ul {
+h6, p, small {
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
   letter-spacing: .5px; }
@@ -84,6 +84,8 @@ blockquote {
     font-size: 18px; }
 
 ul {
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
   list-style-position: inside; }
 
 .container {
@@ -403,7 +405,8 @@ nav {
   display: block; }
 
 .mobile-nav {
-  display: none; }
+  display: none;
+  width: 0; }
   @media screen and (max-width: 760px) {
     .mobile-nav {
       display: flex; } }

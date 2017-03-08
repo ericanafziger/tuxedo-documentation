@@ -109,6 +109,7 @@ nav {
 //===========Mobile Menu=========//
 .mobile-nav {
   display: none;
+  width: 0;
   @media screen and #{$tablet} {
     display: flex;
   }
