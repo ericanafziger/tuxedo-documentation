@@ -81,9 +81,4 @@ blockquote {
 ul {
   @extend %body-font;
   list-style-position: inside;
-  padding-bottom: 20px;
-  li {
-    padding: 5px 0;
-
-  }
 }

@@ -84,10 +84,7 @@ blockquote {
     font-size: 18px; }
 
 ul {
-  list-style-position: inside;
-  padding-bottom: 20px; }
-  ul li {
-    padding: 5px 0; }
+  list-style-position: inside; }
 
 .container {
   max-width: 1200px;
@@ -1101,10 +1098,10 @@ section {
     .hamburger-2 {
       display: block; } }
 
-.hero {
+.hero.example {
   min-height: auto;
   max-height: 700px; }
-  .hero-image {
+  .hero.example .hero-image {
     max-height: 700px; }
 
 .side-bar.example {

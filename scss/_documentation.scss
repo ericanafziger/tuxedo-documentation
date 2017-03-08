@@ -60,10 +60,10 @@
 }
 
 //Adjusts hero height for documentation purposes{
-.hero {
+.hero.example {
   min-height: auto;
   max-height: 700px;
-  &-image {
+  .hero-image {
     max-height: 700px;
   }
 }
