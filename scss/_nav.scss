@@ -19,7 +19,7 @@ nav {
     @media screen and #{$tablet} { //hides menu items at tablet size
       display: none;
     }
-    a, li {   //hover effect when nav links or dropdowns are selected
+    li {   //hover effect when nav links or dropdowns are selected
       margin: 0;
       &:hover {
         background: $light;
