@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-  /* Every time the window is scrolled ... */
+  //=================Animation functionality=============//
   function animations() {
-    $(window).scroll( function(){
+    $(window).scroll( function(){  /* Every time the window is scrolled ... */
 
       /* Check the location of each animate-in elements */
       $('.animate-in').each( function(){
