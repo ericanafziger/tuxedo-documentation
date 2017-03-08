@@ -111,6 +111,7 @@ nav {
   display: none;
   width: 0;
   @media screen and #{$tablet} {
+    width: auto;
     display: flex;
   }
   &:hover {
