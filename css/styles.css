@@ -231,7 +231,8 @@ ul {
 
 .hero-slideshow {
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  min-height: 500px; }
   .hero-slideshow .images img {
     position: absolute;
     top: 0;
@@ -242,6 +243,7 @@ ul {
     height: 100vh;
     display: block;
     object-fit: cover;
+    min-height: 500px;
     transition: opacity ease-in-out 1s;
     opacity: 0; }
   .hero-slideshow .images .active {
