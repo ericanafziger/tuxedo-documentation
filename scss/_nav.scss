@@ -173,6 +173,9 @@ nav {
     }
   }
   .fly-dropdown, .sub-fly-dropdown { //styling of flyout menu dropdowns
+    &:hover {
+      cursor: pointer;
+    }
     .dropdown-menu {
       display: none;
       list-style: none;

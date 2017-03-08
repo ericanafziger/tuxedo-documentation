@@ -461,6 +461,8 @@ nav {
     .flyout-menu li a {
       text-transform: uppercase;
       font-size: 1.4rem; }
+  .flyout-menu .fly-dropdown:hover, .flyout-menu .sub-fly-dropdown:hover {
+    cursor: pointer; }
   .flyout-menu .fly-dropdown .dropdown-menu, .flyout-menu .sub-fly-dropdown .dropdown-menu {
     display: none;
     list-style: none; }

@@ -311,7 +311,100 @@
                 <a href="#"><li>Women's</li></a>
                 <a href="#"><li>Men's</li></a>
                 <a href="#"><li>Kid's</li></a>
-                <li class="dropdown">Sale +
+                <a href="#"><li>Sale</li></a>
+              </ul>
+            </li>
+            <a href="#" class="f-col-1 flex-center"><li>Cart</li></a>
+          </ul>
+          <ul class="mobile-nav flex-center">
+            <div class="hamburger-2"></div>
+          </ul>
+          <div class="flyout">
+            <div class="bar">
+              <header class="text-light f-col-4"><img src="img/logo-thick-light.svg" alt="Tuxedo Logo">
+              </header>
+              <div class="close f-col-1"></div>
+            </div>
+            <ul class="flyout-menu">
+              <li><a href="#">Home</a></li>
+              <li class="fly-dropdown"><a>Shop +</a>
+                <ul class="dropdown-menu">
+                  <li><a>Women's</a></li>
+                  <li><a>Men's</a></li>
+                  <li><a>Kid's</a></li>
+                  <li><a>Sale</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Cart</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="code">
+        <xmp>
+<nav class="nav-pop">
+  <header class="text-light"><img src="img/logo-thick-light.svg" alt="Tuxedo Logo">
+  </header>
+  <ul class="menu-items">
+    <a href="#" class="f-col-1 flex-center"><li>Home</li></a>
+    <li class="f-col-1 flex-center dropdown"><a href="#">Shop +</a>
+      <ul class="dropdown-menu">
+        <a href="#"><li>Women's</li></a>
+        <a href="#"><li>Men's</li></a>
+        <a href="#"><li>Kid's</li></a>
+        <a href="#"><li>Sale</li></a>
+      </ul>
+    </li>
+    <a href="#" class="f-col-1 flex-center"><li>Cart</li></a>
+  </ul>
+  <ul class="mobile-nav flex-center">
+    <div class="hamburger"></div>
+  </ul>
+  <div class="flyout">
+    <div class="bar">
+      <header class="text-light f-col-4"><img src="img/logo-thick-light.svg" alt="Tuxedo Logo">
+      </header>
+      <div class="close f-col-1"></div>
+    </div>
+    <ul class="flyout-menu">
+      <li><a href="#">Home</a></li>
+      <li class="fly-dropdown"><a href="#">Shop +</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Women's</a></li>
+          <li><a href="#">Men's</a></li>
+          <li><a href="#">Kid's</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Cart</a></li>
+    </ul>
+  </div>
+</nav>
+        </xmp>
+      </div>
+      <div class="code">
+        <label>js/tuxedo.js</label>
+        <br><br><br>
+        (...)<br><br><br>
+        ////////// Add Functions to Call HERE//////////<br><br><br>
+        mobileMenu();
+        <br><br><br>
+      </div>
+
+      <h3 class="text-dark">Mobile Nav with Dropdowns & Sub Dropdowns</h3>
+      <p>The following code is for putting a nested dropdown within your mobile nav. These nested dropdowns can easily be nested and nested - although be careful as it could become confusing for your users!</p>
+      <div class="code-example">
+        <nav id="mobile-nav-drop-example" class="nav-pop relative">
+          <header class="text-light"><img src="img/logo-thick-light.svg" alt="Tuxedo Logo">
+          </header>
+          <ul class="menu-items">
+            <a href="#" class="f-col-1 flex-center"><li>Home</li></a>
+            <li class="f-col-1 flex-center dropdown"><a href="#">Shop +</a>
+              <ul class="dropdown-menu">
+                <a href="#"><li>Women's</li></a>
+                <a href="#"><li>Men's</li></a>
+                <a href="#"><li>Kid's</li></a>
+                <li class="dropdown"><a href="#">Sale +</a>
                   <ul class="sub-dropdown-menu">
                     <a href="#"><li>Women</li></a>
                     <a href="#"><li>Men</li></a>
@@ -337,7 +430,12 @@
                   <li><a>Women's</a></li>
                   <li><a>Men's</a></li>
                   <li><a>Kid's</a></li>
-                  <li><a>Sale</a></li>
+                  <li class="sub-fly-dropdown"><a href="#">Sale +</a>
+                    <ul class="sub-dropdown-menu">
+                      <li><a href="#">Women</a></li>
+                      <li><a href="#">Men</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
               <li><a href="#">Cart</a></li>
@@ -383,7 +481,12 @@
           <li><a href="#">Women's</a></li>
           <li><a href="#">Men's</a></li>
           <li><a href="#">Kid's</a></li>
-          <li><a href="#">Sale</a></li>
+          <li class="sub-fly-dropdown"><a href="#">Sale +</a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Men</a></li>
+            </ul>
+          </li>
         </ul>
       </li>
       <li><a href="#">Cart</a></li>
