@@ -326,13 +326,16 @@ nav {
     @media screen and (max-width: 760px) {
       nav .menu-items {
         display: none; } }
-    nav .menu-items li {
+    nav .menu-items a, nav .menu-items li {
       margin: 0; }
-      nav .menu-items li:hover {
+      nav .menu-items a .dropdown a:hover, nav .menu-items li .dropdown a:hover {
+        background: #262525;
+        color: #f4f4f4; }
+      nav .menu-items a:hover, nav .menu-items li:hover {
         background: #f4f4f4;
         color: #262525;
         cursor: pointer; }
-      nav .menu-items li a:hover {
+      nav .menu-items a a:hover, nav .menu-items li a:hover {
         color: inherit; }
   nav header {
     padding-left: 30px;
