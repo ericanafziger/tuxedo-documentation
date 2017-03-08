@@ -68,9 +68,9 @@ nav {
   border-bottom: 2px solid $color-pop;
   color: $color-pop;
 }
-.dropdown {
+.dropdown { //styling of dropdown class
   position: relative;
-  .dropdown-menu {
+  .dropdown-menu { //styling of ul dropdown-menu
     display: none;
     list-style: none;
     position: absolute;
@@ -89,7 +89,7 @@ nav {
       }
     }
   }
-  .sub-dropdown-menu {
+  .sub-dropdown-menu { //for dropdown menu nested within a dropdown
     display: none;
     list-style: none;
     position: absolute;
