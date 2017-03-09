@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100i,300i,400,700|Raleway:300,400');
 
-
+//Display code to copy
 .code {
   position: relative;
   font-family: monospace;
@@ -20,12 +20,12 @@
     font-family: monospace;
   }
 }
-
+//Display visual example code
 .code-example {
   max-width: 900px;
   margin-bottom: 20px;
 }
-
+//color palettes
 .palette {
   display: flex;
   .palette-color {
@@ -33,7 +33,7 @@
     height: 75px;
   }
 }
-
+// Classes to include other fonts
 .montserrat {
   font-family: 'Montserrat', sans-serif
 }
@@ -59,13 +59,38 @@
   }
 }
 
-//Adjusts hero height for documentation purposes{
+//Adjusts hero height for documentation purposes
 .hero.example {
   min-height: auto;
   max-height: 700px;
   .hero-image {
     max-height: 700px;
+    @media screen and #{$mobile} {
+      max-height: 500px;
+    }
   }
+  @media screen and #{$mobile} {
+    max-height: 500px;
+  }
+}
+//Adjusts hero slideshow height & fonts for documentation purposes
+.hero-slideshow.example {
+  min-height: auto;
+  max-height: 700px;
+  .images img{
+    max-height: 700px;
+    @media screen and #{$mobile} {
+      max-height: 500px;
+    }
+  }
+  @media screen and #{$mobile} {
+    max-height: 500px;
+    h6 {
+      font-size: .8rem;
+      line-height: 1rem;
+    }
+  }
+
 }
 
 //Styles sidebar for documentation

@@ -1087,6 +1087,27 @@ footer {
   max-height: 700px; }
   .hero.example .hero-image {
     max-height: 700px; }
+    @media screen and (max-width: 500px) {
+      .hero.example .hero-image {
+        max-height: 500px; } }
+  @media screen and (max-width: 500px) {
+    .hero.example {
+      max-height: 500px; } }
+
+.hero-slideshow.example {
+  min-height: auto;
+  max-height: 700px; }
+  .hero-slideshow.example .images img {
+    max-height: 700px; }
+    @media screen and (max-width: 500px) {
+      .hero-slideshow.example .images img {
+        max-height: 500px; } }
+  @media screen and (max-width: 500px) {
+    .hero-slideshow.example {
+      max-height: 500px; }
+      .hero-slideshow.example h6 {
+        font-size: .8rem;
+        line-height: 1rem; } }
 
 .side-bar.example {
   max-height: 500px;
