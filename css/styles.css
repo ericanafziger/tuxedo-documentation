@@ -516,7 +516,8 @@ nav {
       padding-top: 80px; } }
 
 .canvas-container {
-  position: relative; }
+  position: relative;
+  min-height: 600px; }
   .canvas-container .canvas-content {
     position: absolute;
     top: 50%;
@@ -525,6 +526,7 @@ nav {
     max-width: 800px; }
 
 canvas {
+  min-height: 600px;
   display: block;
   max-width: 100%; }
 
