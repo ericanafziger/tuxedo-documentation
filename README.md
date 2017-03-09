@@ -17,6 +17,7 @@ tuxedo-css/
 |  |--_animations.scss
 |  |--_buttons.scss
 |  |--_fonts.scss
+|  |--_footers.scss
 |  |--_forms.scss
 |  |--_global.scss
 |  |--_grid.scss
