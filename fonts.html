@@ -129,7 +129,7 @@ $body-font: 'Lato', sans-serif;
       <br>
       <blockquote>
         Blockquote example: Typography is the craft of endowing human language with a durable visual form.<br>
-        <cite>- Robert Bringhurst</cite>
+        <cite>- Cite example: Robert Bringhurst</cite>
       </blockquote>
       <div class="code">
         <label>scss/_global.scss</label>
@@ -140,6 +140,8 @@ $body-font: 'Lato', sans-serif;
 
 //Define font family for header and body font. Must already be imported above
 $header-font: 'Josefin Sans', sans-serif;
+$body-font: 'Lato', sans-serif;
+
 %body-font {
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
@@ -147,6 +149,8 @@ $header-font: 'Josefin Sans', sans-serif;
 }
         </xmp>
       </div>
+
+      <!--Montserrat and Raleway Start-->
       <h3 class="montserrat">Montserrat + Raleway</h3>
       <h6 class="raleway">Intro text styling example - lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
       <p class="raleway">
@@ -161,7 +165,7 @@ $header-font: 'Josefin Sans', sans-serif;
       <br>
       <blockquote class="montserrat">
         Blockquote example: Typography is the craft of endowing human language with a durable visual form.<br>
-        <cite>- Robert Bringhurst</cite>
+        <cite>- Cite example: Robert Bringhurst</cite>
       </blockquote>
       <div class="code">
         <label>scss/_global.scss</label>
@@ -172,6 +176,8 @@ $header-font: 'Josefin Sans', sans-serif;
 
 //Define font family for header and body font. Must already be imported above
 $header-font: 'Montserrat', sans-serif;
+$body-font: 'Raleway', sans-serif;
+
 %body-font {
   font-family: 'Raleway', sans-serif;
   font-weight: lighter;
@@ -179,6 +185,80 @@ $header-font: 'Montserrat', sans-serif;
 }
         </xmp>
       </div>
+
+      <!--Cabin and Source Sans Start-->
+      <h3 class="cabin">Cabin + Source Sans Pro</h3>
+      <h6 class="source-sans">Intro text styling example - lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+      <p class="source-sans">
+        Body copy example - lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <h1 class="cabin">This is an h1</h1>
+      <h2 class="cabin">This is an h2</h2>
+      <h3 class="cabin">This is an h3</h3>
+      <h4 class="cabin">This is an h4</h4>
+      <h5 class="cabin">This is an h5</h5>
+      <h6 class="source-sans">This is an h6/intro text</h6>
+      <br>
+      <blockquote class="cabin">
+        Blockquote example: Typography is the craft of endowing human language with a durable visual form.<br>
+        <cite>- Cite example: Robert Bringhurst</cite>
+      </blockquote>
+      <div class="code">
+        <label>scss/_global.scss</label>
+        <br><br>
+        <xmp>
+//fonts - to update, import a new font below
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,700|Source+Sans+Pro:300,400,400i,700');
+
+//Define font family for header and body font. Must already be imported above
+$header-font: 'Cabin', sans-serif;
+$body-font: 'Source Sans Pro', sans-serif;
+
+%body-font {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  letter-spacing: .5px;
+}
+        </xmp>
+      </div>
+
+      <!--Cabin and Source Sans Start-->
+      <h3 class="pt-serif">PT Serif + Source Sans Pro</h3>
+      <h6 class="source-sans">Intro text styling example - lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+      <p class="source-sans">
+        Body copy example - lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <h1 class="pt-serif">This is an h1</h1>
+      <h2 class="pt-serif">This is an h2</h2>
+      <h3 class="pt-serif">This is an h3</h3>
+      <h4 class="pt-serif">This is an h4</h4>
+      <h5 class="pt-serif">This is an h5</h5>
+      <h6 class="source-sans">This is an h6/intro text</h6>
+      <br>
+      <blockquote class="pt-serif">
+        Blockquote example: Typography is the craft of endowing human language with a durable visual form.<br>
+        <cite>- Cite example: Robert Bringhurst</cite>
+      </blockquote>
+      <div class="code">
+        <label>scss/_global.scss</label>
+        <br><br>
+        <xmp>
+//fonts - to update, import a new font below
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Source+Sans+Pro:300,400,400i,700');
+
+//Define font family for header and body font. Must already be imported above
+$header-font: 'PT Serif', serif;
+$body-font: 'Source Sans Pro', sans-serif;
+
+%body-font {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  letter-spacing: .5px;
+}
+        </xmp>
+      </div>
+
+
     </div>
     <footer class="f-row responsive">
       <small class="f-col-1 flex-center">2017 Erica Nafziger, All rights reserved.

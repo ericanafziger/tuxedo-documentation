@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100i,300,700,700i|Lato:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100i,300i,400,700|Raleway:300,400");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,400i,700|Source+Sans+Pro:300,400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1065,6 +1067,15 @@ footer {
 
 .raleway {
   font-family: "Raleway", sans-serif; }
+
+.cabin {
+  font-family: "Cabin", sans-serif; }
+
+.source-sans {
+  font-family: "Source Sans Pro", sans-serif; }
+
+.pt-serif {
+  font-family: 'PT Serif', serif; }
 
 #basic-nav-example, #nav-dropdowns-example, #nav-dropsub-example, #mobile-nav-example, #mobile-nav-drop-example, #nav-helper-1, #nav-helper-2, #nav-helper-3, #nav-helper-4, #nav-helper-5, #nav-helper-6 {
   z-index: 1; }

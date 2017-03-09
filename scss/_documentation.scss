@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100i,300i,400,700|Raleway:300,400');
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,700|Source+Sans+Pro:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700');
 
 //Display code to copy
 .code {
@@ -39,6 +41,15 @@
 }
 .raleway {
   font-family: 'Raleway', sans-serif
+}
+.cabin {
+  font-family: 'Cabin', sans-serif
+}
+.source-sans {
+  font-family: 'Source Sans Pro', sans-serif
+}
+.pt-serif {
+  font-family: 'PT Serif', serif;
 }
 
 //Nav bar overrides
