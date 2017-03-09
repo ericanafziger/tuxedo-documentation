@@ -94,12 +94,6 @@ ul {
   margin: auto;
   padding: 40px 30px; }
 
-.row:before,
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 [class^='col-'] {
   float: left;
   min-height: 1px;
@@ -142,14 +136,6 @@ ul {
 
 .col-12 {
   width: 99%; }
-
-@media screen and (max-width: 760px) {
-  [class*='col-'] {
-    width: 49%; } }
-
-@media screen and (max-width: 760px) {
-  .col-12 {
-    width: 99%; } }
 
 @media screen and (max-width: 500px) {
   [class*='col-'] {
