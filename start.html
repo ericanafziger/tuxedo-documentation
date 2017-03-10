@@ -82,17 +82,9 @@
       <form class="noStyle" action="zip/tuxedo-full.zip" method="get">
         <button type="submit" class="btn-dark">Download Tuxedo</button>
       </form>
-      <p>
-        Another option is to clone the Tuxedo repo directly from GitHub. Just open up terminal and copy the following code snippet into the command line:
-      </p>
-      <div class="code">
-        <xmp>
-git clone https://github.com/ericanafziger/tuxedo-css
-        </xmp>
-      </div>
-      <p>
-        Now that you have your own copy of tuxedo, navigate into the tuxedo folder. To get started, we are going to watch the Sass component of your project. Now, when you start making changes it will be compiled as CSS. If you already have Sass installed on your machine ignore the first snippet below. Once you are done, open a new terminal window or tab; this Sass watch should be left running anytime you are working on the project.
-      </p>
+      <h3>Setting Up Sass</h3>
+      <p>These instructions are for setting up on a Mac. If you are on Windows or Linux read the documentation for getting Sass installed on your machine <strong><a href="http://sass-lang.com/install" target="_blank">here</a></strong>.</p>
+      <p>Navigate into the tuxedo-full folder you downloaded. To get started, we are going to set a Sass watch on the the SCSS components of the project. This will compile any changes you make in the SCSS files into CSS the browser can read. If you already have Sass installed on your machine ignore the first snippet below and just run the watch in terminal. Once you are done, open a new terminal window or tab in order to leave the watch running. The Sass watch should be left running anytime you are working on the project making changes to the SCSS files.</p>
       <div class="code">
         <xmp>
 gem install sass
@@ -105,14 +97,14 @@ sass --watch scss:css
       </div>
       <h3>Minified version of Tuxedo</h3>
       <p>
-        Alternatively, you can download just the minified CSS and JavaScript version of Tuxedo. This is a good option for developers who don't want to touch any of the SCSS files and want to use the styles straight out of the box. The drawback to this method is that you will have to use your own stylesheet to override any styles you want to change.
+        Alternatively, you can download just the minified CSS and JavaScript version of Tuxedo. This is a good option for developers who don't want to touch any of the SCSS files and want to use the styles straight out of the box. The drawback to this method is that you will have to use your own stylesheet to override any styles you want to change. No need to run the Sass watch above with this version.
       </p>
       <form class="noStyle" action="zip/minified-tuxedo.zip" method="get">
         <button type="submit" class="btn-dark">Download Minified Tuxedo</button>
       </form>
       <h3>Download One Component at a Time</h3>
       <p>
-        If you only want to download Tuxedo one component at a time, click on a link below to get started. This option is great for lightweight sites that don’t need much code to get started, or for those just looking for a grid, forms, etc.  Each of these downloads will come with the necessary SCSS files, a base index.html, as well as any necessary JavaScript files.
+        If you only want to download Tuxedo one component at a time, click on a link below to get started. This option is great for lightweight sites that don’t need much code to get started, or for those just looking for a grid, forms, etc.  Each of these downloads will come with the necessary SCSS files, a base index.html, as well as any necessary JavaScript files. Don't forget to run the Sass watch described above for you SCSS files to be compiled as CSS.
       </p>
       <div class="border-left-dark">
         <h4><a href="zip/tuxedo_animations.zip" download>Animations</a></h4>
@@ -140,7 +132,8 @@ tuxedo-css/
 |  |--_animations.scss
 |  |--_buttons.scss
 |  |--_fonts.scss
-|  |--_forms.scss
+|  |--_fonts.scss
+|  |--_footers.scss
 |  |--_global.scss
 |  |--_grid.scss
 |  |--_helpers.scss
@@ -148,7 +141,7 @@ tuxedo-css/
 |  |--_mediaQueries.scss
 |  |--_nav.scss
 |  |--_reset.scss
-|  |--_styles.scss
+|  |--styles.scss
 |
 |
 |--js/
