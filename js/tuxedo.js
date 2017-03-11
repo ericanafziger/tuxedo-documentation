@@ -59,7 +59,7 @@ function heroSlideshow() {
       photoNumber += 1;
       $(".circle").removeClass("active");
       $(".circle:nth-child("+imageCounter+")").addClass("active");
-    }, 5000); }
+    }, 5000); } //change slideshow time interval here
 
     function stopSlideshow() { clearInterval(interval)}
 
