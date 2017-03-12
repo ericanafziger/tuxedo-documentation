@@ -89,6 +89,9 @@ ul {
   font-weight: lighter;
   list-style-position: inside; }
 
+text {
+  font-family: "Lato", sans-serif; }
+
 .container {
   max-width: 1200px;
   width: 100%;
