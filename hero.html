@@ -246,17 +246,18 @@ heroSlideshow();
         </xmp>
       </div>
       <h3>Circles</h3>
-      <p>The circles div provides a visual respresentation to users of how many images are in the slideshow. Clicking on any of the circles will show the corresponding image. Slideshows do not need these circles to function properly so simply remove the entire circles div if you do not want them in your project.</p>
+      <p>The circles div provides a visual respresentation of the number of images in the slideshow and which image is currently being viewed. Clicking on any of the circles will show the corresponding image. Slideshows do not need these circles to function properly so simply remove the entire circles div if you do not want them in your project. You can change the style of the circles by appending a new svg path to the background url of the <code>circle</code> class which can be found in the <code>_hero.scss</code> file.</p>
+      <h3>Arrows</h3>
+      <p>The right and left arrow divs allow user to navigate forward or backward in your slideshow. You can change the style of the arrows by appending a new svg path to the background url of the <code>right-arrow</code> and <code>left-arrow</code> classes which can be found in the <code>_hero.scss</code> file.</p>
       <h3>Adding or removing images</h3>
       <p>Customizing your slideshow requires several simple steps and <strong>no</strong> JavaScript or CSS manipulation. Each image of the slideshow is given a unique class number that is sequential. These class numbers correspond to the circle classes below and <strong>both of these sequences must match</strong> for your slideshow to function properly.</p>
       <p>To add another image simply duplicate one of the other images, change its class to the next number in the sequence, and change the src to the image of your choice. For example, if you are adding in a 6th slide it would be given <code>class="6"</code>.</p>
       <p>Next, find the div with the class of circles below and add a new div with the <code>class="circle 6"</code>. You can continue this process for as many images as you would like to add.</p>
       <p>Be sure that when rearranging images the class number sequence is in numerical order for both the images and cirlces. The first image and circle in the sequence should both be given the class <code>active</code>. If you remove the active class the slideshow will no longer function properly.</p>
-      <p>To remove an image simply delete the image and the circle with the corresponding numbered from both the images and circles divs respectively. Then adjust any class numbers so the numerical sequence is still in order.</p>
+      <p>To remove an image simply delete the image and the circle with the corresponding number from both the images and circles divs respectively. Then adjust any class numbers so the numerical sequence is still in order.</p>
 
       <h3>Changing time between slides</h3>
-      <p>The slideshow if set on a default timer of 5 seconds per slide. To change this interval navigate to the <code>tuxedo.js</code> file. Open the finder for your editor (probably <code>CMD + F</code>).
-
+      <p>The slideshow is set on a default timer of 5 seconds per slide. To change this interval navigate to the <code>tuxedo.js</code> file. Open the finder (<code>CMD + F</code> on Mac) and search <code>change slideshow time interval</code>. 5000(ms) is the default and is equivalent to 5 seconds.
     </div>
     <footer class="f-row responsive">
       <small class="f-col-1 flex-center">2017 Erica Nafziger, All rights reserved.
