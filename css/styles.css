@@ -89,9 +89,6 @@ ul {
   font-weight: lighter;
   list-style-position: inside; }
 
-text {
-  font-family: "Lato", sans-serif; }
-
 .container {
   max-width: 1200px;
   width: 100%;
@@ -1151,5 +1148,15 @@ canvas {
 .noStyle {
   padding: 0;
   margin: 0; }
+
+.arc text {
+  font-family: "Lato", sans-serif; }
+
+.arc path, .arc2 path {
+  stroke: #f4f4f4; }
+
+.arc2 text {
+  font-family: "Lato", sans-serif;
+  text-anchor: middle; }
 
 /*# sourceMappingURL=styles.css.map */
