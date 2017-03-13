@@ -1,6 +1,6 @@
 //============Pie Chart=========//
 var labelColor = '#f4f4f4',
-  donutChart = true; //change to true for donutChart or false for pie chart
+  donutChart = false; //change to true for donutChart or false for pie chart
 
 //margin and radius
 var margin = {top: 20, right: 20, bottom: 20, left: 20},
