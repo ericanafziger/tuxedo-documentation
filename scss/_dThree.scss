@@ -1,0 +1,10 @@
+.arc text {
+  font-family: $body-font;
+}
+.arc path, .arc2 path {
+  stroke: $light;
+}
+.arc2 text {
+  font-family: $body-font;
+  text-anchor: middle;
+}
