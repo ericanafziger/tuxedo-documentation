@@ -1,18 +1,31 @@
-//pie chart
+//============Pie Chart=========//
+var labelColor = '#f4f4f4',
+  pieColor1 = '#102F24',
+  pieColor2 = '#77AD9B',
+  pieColor3 = '#174636',
+  pieColor4 = '#236851',
+  pieColor5 = '#8AB9A9',
+  pieColor6 = '#2A7F62',
+  pieColor7 = '#C4DCD4',
+  donutChart = false; //change donutChart boolean here
+
 //margin and radius
 var margin = {top: 20, right: 20, bottom: 20, left: 20},
 width = 500 - margin.right - margin.left,
 height = 500 - margin.top - margin.bottom,
 radius = width/2;
 
-//color generator
-var color = d3.scaleOrdinal()
-  .range(['#BBDEFB', '#98CAf5', '#6485f6', '#42A5f5', '#2196f3', '#1E88E5', '#1976D2']);
-
 // arc generator
 var arc = d3.arc()
   .outerRadius(radius - 10)
-  .innerRadius(0);
+  .innerRadius(function(d) {
+    if (donutChart) {
+      return 130;
+    } else {
+      return 0;
+    }
+  })
+
 
 var labelArc = d3.arc()
   .outerRadius(radius - 50)
@@ -36,8 +49,10 @@ var svg = d3.select('body').append('svg')
     //parse data
     data.forEach(function(d) {
       d.count = +d.count;
-      d.fruit = d.fruit;
+      d.item = d.item;
+      d.color = d.color;
     });
+
     //append g elements (arc)
     var g = svg.selectAll('.arc')
       .data(pie(data))
@@ -47,12 +62,28 @@ var svg = d3.select('body').append('svg')
     //append path of the arc
     g.append('path')
       .attr('d', arc)
-      .style('fill', function(d) { return color(d.data.fruit)})
+      .style('fill', function(d) { return d.data.color})
+      .transition()
+      .ease(d3.easeLinear)
+      .duration(1500)
+      .attrTween('d', pieTween)
 
     //append text (labels)
     g.append('text')
-      .attr('transform', function(d) { return 'translate(' + labelArc.centroid(d) + ')'})
+      .style('fill', labelColor)
+      .transition()
+      .delay(1500)
+      .ease(d3.easeLinear)
+      .duration(800)
+      .attrTween('d', pieTween)
+      .attr('transform', function(d) { return 'translate(' + labelArc.centroid(d) + ')';})
       .attr('dy', '.35em')
-      .text(function(d) {return d.data.fruit})
+      .text(function(d) {return d.data.item})
 
   });
+
+  function pieTween(b) {
+    b.innerRadius = 0;
+    var i = d3.interpolate({startAngle: 0, endAngle: -0}, b);
+    return function (t) { return arc(i(t))}
+  }

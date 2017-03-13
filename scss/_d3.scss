@@ -1,4 +1,10 @@
 .arc text {
   font-family: $body-font;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  text-anchor: middle;
+  fill: $light;
+}
+.arc path {
+  stroke: $light;
+  stroke-width: 2;
 }

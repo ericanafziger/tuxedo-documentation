@@ -1150,13 +1150,13 @@ canvas {
   margin: 0; }
 
 .arc text {
-  font-family: "Lato", sans-serif; }
-
-.arc path, .arc2 path {
-  stroke: #f4f4f4; }
-
-.arc2 text {
   font-family: "Lato", sans-serif;
-  text-anchor: middle; }
+  font-size: 0.8rem;
+  text-anchor: middle;
+  fill: #f4f4f4; }
+
+.arc path {
+  stroke: #f4f4f4;
+  stroke-width: 2; }
 
 /*# sourceMappingURL=styles.css.map */

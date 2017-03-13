@@ -1,7 +1,8 @@
-fruit,count
-Apple,10
-Strawberry,20
-Banana,15
-Blueberry,20
-Kiwi,30
-Plum,5
+item,count,color
+Apple,10,#6C0E23
+Strawberry,50,#D05353
+Banana,15,#E1CE7A
+Blueberry,20,#324A5F
+Kiwi,30,#6C7D47
+Plum,5,#372549
+Orange,15,#CE6A2E
