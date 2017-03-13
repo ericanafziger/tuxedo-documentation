@@ -1,13 +1,6 @@
 //============Pie Chart=========//
 var labelColor = '#f4f4f4',
-  pieColor1 = '#102F24',
-  pieColor2 = '#77AD9B',
-  pieColor3 = '#174636',
-  pieColor4 = '#236851',
-  pieColor5 = '#8AB9A9',
-  pieColor6 = '#2A7F62',
-  pieColor7 = '#C4DCD4',
-  donutChart = false; //change donutChart boolean here
+  donutChart = true; //change to true for donutChart or false for pie chart
 
 //margin and radius
 var margin = {top: 20, right: 20, bottom: 20, left: 20},
@@ -37,7 +30,7 @@ var pie = d3.pie()
   .value(function(d) { return d.count; });
 
 //define svg
-var svg = d3.select('body').append('svg')
+var svg = d3.selectAll('.pieChart').append('svg')
   .attr('width', width)
   .attr('height', height)
   .append('g')
