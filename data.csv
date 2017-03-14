@@ -1,8 +1,6 @@
-item,count,color
-Apple,10,#6C0E23
-Strawberry,50,#D05353
-Banana,15,#E1CE7A
-Blueberry,20,#324A5F
-Kiwi,30,#6C7D47
-Plum,5,#372549
-Orange,15,#CE6A2E
+species,weight,age,color
+zebra,1000,2,#6C0E23
+lion,420,8,#D05353
+gazelle,51,3,#E1CE7A
+penguin,51,3,#324A5F
+tiger,320,4,#CE6A2E

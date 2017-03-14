@@ -27,7 +27,7 @@ var labelArc = d3.arc()
 //pie generator
 var pie = d3.pie()
   .sort(null)
-  .value(function(d) { return d.count; });
+  .value(function(d) { return d.weight; });
 
 //define svg
 var svg = d3.selectAll('.pieChart').append('svg')
@@ -37,14 +37,26 @@ var svg = d3.selectAll('.pieChart').append('svg')
   .attr('transform', 'translate(' + width/2 + ', ' + height/2 + ')');
 
   //import data
-  d3.csv('data.csv', function(error, data) {
+  // d3.csv('data.csv', function(error, data) {
+  //   if (error) throw error;
+  //   //parse data
+  //   data.forEach(function(d) {
+  //     d.count = +d.count;
+  //     d.item = d.item;
+  //     d.color = d.color;
+  //   });
+
+  d3.csv("data.csv", function(error, data) {
+    console.log(data);
     if (error) throw error;
     //parse data
     data.forEach(function(d) {
-      d.count = +d.count;
-      d.item = d.item;
+      d.species = d.species;
+      d.weight = +d.weight;
       d.color = d.color;
     });
+
+  // })
 
     //append g elements (arc)
     var g = svg.selectAll('.arc')
@@ -71,7 +83,7 @@ var svg = d3.selectAll('.pieChart').append('svg')
       .attrTween('d', pieTween)
       .attr('transform', function(d) { return 'translate(' + labelArc.centroid(d) + ')';})
       .attr('dy', '.35em')
-      .text(function(d) {return d.data.item})
+      .text(function(d) {return d.data.species})
 
   });
 

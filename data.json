@@ -1,0 +1,27 @@
+[
+ {"species":"zebra",
+  "weight":"1000",
+  "age": 2,
+  "color": "#432466"
+ },
+ {"species":"lion",
+  "weight":"420",
+  "age": 8,
+  "color": "#235e32"
+ },
+ {"species":"gazelle",
+  "weight":"51",
+  "age": 3,
+  "color": "#2798fe"
+ },
+ {"species":"penguin",
+  "weight":"51",
+  "age": 1,
+  "color": "#ae93ea"
+},
+ {"species":"tiger",
+  "weight":"320",
+  "age": 4,
+  "color": "#b8ef43"
+ }x
+]
