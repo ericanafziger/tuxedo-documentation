@@ -1,6 +1,6 @@
 //============Pie Chart=========//
 var labelColor = '#f4f4f4',
-  donutChart = false; //change to true for donutChart or false for pie chart
+  donutChart = true; //change to true for donutChart or false for pie chart
 
 //margin and radius
 var margin = {top: 20, right: 20, bottom: 20, left: 20},
@@ -53,12 +53,6 @@ var svg = d3.selectAll('.pieChart').append('svg')
     var g = svg.selectAll('.arc')
       .data(pie(data))
       .enter().append('g')
-      // .on("mouseover", function() {
-      //     d3.select(this).classed("hover", true);
-      // })
-      // .on("mouseout", function() {
-      //     d3.select(this).classed("hover", false);
-      // })
       .attr('class', 'arc');
 
     //append path of the arc
@@ -94,11 +88,24 @@ var svg = d3.selectAll('.pieChart').append('svg')
     g.append('text')
       .style('fill', labelColor)
       .style('opacity', 0)
-      .transition()
-      .delay(1500)
-      .ease(d3.easeLinear)
-      .duration(400)
-      // .attrTween('d', pieTween)
+      // .transition()
+      // .delay(1500)
+      // .ease(d3.easeLinear)
+      // .duration(400)
+      .on("mouseover", function() { //add hover functionality
+        d3.select(this).transition()
+        .style("opacity", 1)
+        .style("cursor", 'pointer')
+        d3.select(this.parentNode).selectAll("path")
+        .transition()
+        .duration(200)
+        .style('opacity', 1)
+
+      })
+      .on("mouseout", function() { //take away hover changes
+        d3.select(this).transition()
+        .style("opacity", 0)
+      })
       .attr('transform', function(d) { return 'translate(' + labelArc.centroid(d) + ')';})
       .attr('dy', '.35em')
       .text(function(d) {return d.data.species + " (" + d.data.weight + " lbs)"})
