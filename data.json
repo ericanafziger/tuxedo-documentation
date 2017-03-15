@@ -2,26 +2,21 @@
  {"species":"zebra",
   "weight":"1000",
   "age": 2,
-  "color": "#432466"
+  "color": "#212022"
  },
  {"species":"lion",
   "weight":"420",
   "age": 8,
-  "color": "#235e32"
+  "color": "#454545"
  },
  {"species":"gazelle",
-  "weight":"51",
+  "weight":"151",
   "age": 3,
-  "color": "#2798fe"
+  "color": "#6e6e6e"
  },
- {"species":"penguin",
-  "weight":"51",
-  "age": 1,
-  "color": "#ae93ea"
-},
  {"species":"tiger",
   "weight":"320",
   "age": 4,
-  "color": "#b8ef43"
- }x
+  "color": "#bbbbbb"
+ }
 ]
