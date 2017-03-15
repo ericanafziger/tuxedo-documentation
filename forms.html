@@ -221,115 +221,132 @@
       <h3 class="text-dark">Form Styling Helpers</h3>
       <p>Each form element comes in several different styling states. Inputs, selects, textareas, and form-divides can all be styled in dark, light, or pop. Checkboxes, radio buttons, and form-headers can all be styled in dark and light variations. Simple change the ending of their classes to see the changes. For example, change <code>textarea-light</code> to <code>textarea-pop</code> or <code>textarea-dark</code> to change the styling.</p>
 
-      <h3 class="text-dark">Form Examples</h3>
+      <h3 class="text-dark">Form Example</h3>
       <p>Want a basic form setup right away? The following form examples will get you up and running in no time. Simply use the parts you need and discard the parts you don't.</p>
       <div class="code-example">
-        <form class="bg-pop">
-          <header class="form-header-light">Login</header>
-          <input type="email" class="input-light" placeholder="Email Address">
-          <input type="password" class="input-light" placeholder="Password">
+        <form class="box-dark">
+          <header class="form-header-dark">Login</header>
+          <input type="email" class="input-dark" placeholder="Email Address">
+          <input type="password" class="input-dark" placeholder="Password">
 
-          <label class="text-light">Textarea</label>
-          <textarea class="textarea-light" rows="3" placeholder="Textarea text here"></textarea>
+          <label class="text-dark">Textarea</label>
+          <textarea class="textarea-dark" rows="3" placeholder="Textarea text here"></textarea>
 
-          <label class="text-light">Select menu</label>
-          <select class="select-light">
+          <label class="text-dark">Select menu</label>
+          <select class="select-dark">
             <option selected="true" disabled>Choose Option</option>
             <option>Option 1</option>
             <option>Option 2</option>
             <option>Option 3</option>
           </select>
 
-          <label class="text-light">Checkboxes</label>
-          <div class="checkbox-light">
+          <label class="text-dark">Checkboxes</label>
+          <div class="checkbox-dark">
             <input type="checkbox" id="limes">
             <label for="limes">Limes</label>
           </div>
-          <div class="checkbox-light">
+          <div class="checkbox-dark">
             <input type="checkbox" id="tomatoes">
             <label for="tomatoes">Tomatoes</label>
           </div>
-          <div class="checkbox-light">
+          <div class="checkbox-dark">
             <input type="checkbox" id="flour">
             <label for="flour">Flour</label>
           </div>
 
-          <div class="form-divide-light"></div>
+          <div class="form-divide-dark"></div>
 
-          <label class="text-light">Radio buttons</label>
-              <div class="radio-light">
-                <input type="radio" id="one" name="radio-group">
-                <label for="one">One</label>
-              </div>
-              <div class="radio-light">
-                <input type="radio" id="two" name="radio-group">
-                <label for="two">Two</label>
-              </div>
-              <div class="radio-light">
-                <input type="radio" id="three" name="radio-group">
-                <label for="three">Three</label>
-              </div>
+          <label class="text-dark">Radio buttons</label>
+          <div class="radio-dark">
+            <input type="radio" id="one" name="radio-group">
+            <label for="one">One</label>
+          </div>
+          <div class="radio-dark">
+            <input type="radio" id="two" name="radio-group">
+            <label for="two">Two</label>
+          </div>
+          <div class="radio-dark">
+            <input type="radio" id="three" name="radio-group">
+            <label for="three">Three</label>
+          </div>
 
-          <div class="form-divide-light"></div>
+          <div class="form-divide-dark"></div>
           <div class="f-row">
-            <button class="btn-light f-col-1 flex-center" name="button">Sign Up</button>
-            <button class="btn-dark f-col-1 flex-center" name="button">Login</button>
+            <button class="btn-dark f-col-1 flex-center" name="button">Inline Button</button>
+            <button class="btn-ghost-dark f-col-1 flex-center" name="button">Inline Button 2</button>
+          </div>
+          <div class="f-row">
+            <div class="f-col-1 flex-center">
+              <button type="button" class="btn-ghost-dark">Centered Button</button>
+            </div>
+          </div>
+          <div class="f-row">
+            <button type="button" class="btn-dark f-col-1 flex-center">Stretched Button</button>
           </div>
         </form>
 
       </div>
+
       <div class="code">
         <xmp>
-<form class="bg-pop">
-  <header class="form-header-light">Login</header>
-  <input type="email" class="input-light" placeholder="Email Address">
-  <input type="password" class="input-light" placeholder="Password">
+<form class="box-dark">
+  <header class="form-header-dark">Login</header>
+  <input type="email" class="input-dark" placeholder="Email Address">
+  <input type="password" class="input-dark" placeholder="Password">
 
-  <label class="text-light">Textarea</label>
-  <textarea class="textarea-light" rows="3" placeholder="Textarea text here"></textarea>
+  <label class="text-dark">Textarea</label>
+  <textarea class="textarea-dark" rows="3" placeholder="Textarea text here"></textarea>
 
-  <label class="text-light">Select menu</label>
-  <select class="select-light">
+  <label class="text-dark">Select menu</label>
+  <select class="select-dark">
     <option selected="true" disabled>Choose Option</option>
     <option>Option 1</option>
     <option>Option 2</option>
     <option>Option 3</option>
   </select>
 
-  <label class="text-light">Checkboxes</label>
-  <div class="checkbox-light">
+  <label class="text-dark">Checkboxes</label>
+  <div class="checkbox-dark">
     <input type="checkbox" id="limes">
     <label for="limes">Limes</label>
   </div>
-  <div class="checkbox-light">
+  <div class="checkbox-dark">
     <input type="checkbox" id="tomatoes">
     <label for="tomatoes">Tomatoes</label>
   </div>
-  <div class="checkbox-light">
+  <div class="checkbox-dark">
     <input type="checkbox" id="flour">
     <label for="flour">Flour</label>
   </div>
 
-  <div class="form-divide-light"></div>
+  <div class="form-divide-dark"></div>
 
-  <label class="text-light">Radio buttons</label>
-      <div class="radio-light">
-        <input type="radio" id="one" name="radio-group">
-        <label for="one">One</label>
-      </div>
-      <div class="radio-light">
-        <input type="radio" id="two" name="radio-group">
-        <label for="two">Two</label>
-      </div>
-      <div class="radio-light">
-        <input type="radio" id="three" name="radio-group">
-        <label for="three">Three</label>
-      </div>
+  <label class="text-dark">Radio buttons</label>
+  <div class="radio-dark">
+    <input type="radio" id="one" name="radio-group">
+    <label for="one">One</label>
+  </div>
+  <div class="radio-dark">
+    <input type="radio" id="two" name="radio-group">
+    <label for="two">Two</label>
+  </div>
+  <div class="radio-dark">
+    <input type="radio" id="three" name="radio-group">
+    <label for="three">Three</label>
+  </div>
 
-  <div class="form-divide-light"></div>
+  <div class="form-divide-dark"></div>
   <div class="f-row">
-    <button class="btn-light f-col-1 flex-center" name="button">Sign Up</button>
-    <button class="btn-dark f-col-1 flex-center" name="button">Login</button>
+    <button class="btn-dark f-col-1 flex-center" name="button">Inline Button</button>
+    <button class="btn-ghost-dark f-col-1 flex-center" name="button">Inline Button 2</button>
+  </div>
+  <div class="f-row">
+    <div class="f-col-1 flex-center">
+      <button type="button" class="btn-ghost-dark">Centered Button</button>
+    </div>
+  </div>
+  <div class="f-row">
+    <button type="button" class="btn-dark f-col-1 flex-center">Stretched Button</button>
   </div>
 </form>
         </xmp>
