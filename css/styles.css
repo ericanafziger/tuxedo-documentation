@@ -1042,10 +1042,11 @@ footer {
   border: 1px solid #c8c8c8;
   background: #f4f4f4;
   padding: 0 20px;
+  max-width: 100%;
   margin-bottom: 20px;
   color: #5c5c5c;
   overflow-y: hidden;
-  overflow-x: scroll; }
+  overflow-x: auto; }
   .code label {
     position: absolute;
     top: 0;

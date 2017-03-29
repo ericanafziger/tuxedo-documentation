@@ -9,10 +9,11 @@
   border: 1px solid $md-grey;
   background: $light;
   padding: 0 20px;
+  max-width: 100%;
   margin-bottom: 20px;
   color: $dark-grey;
   overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-x: auto;
   label {
     position: absolute;
     top: 0;
