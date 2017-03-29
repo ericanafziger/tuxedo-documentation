@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuxedo CSS - Buttons</title>
+    <link rel="stylesheet" href="css/styles.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/tuxedo.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav class="nav-dark fixed tablet-flex"> 
+      <header> 
+        <a href="index.html"><img src="img/logo-thick-light.svg" alt="Tuxedo Logo"></a>
+      </header>
+      <ul class="mobile-nav flex-center"> 
+        <div class="hamburger"></div> 
+      </ul>
+      <div class="flyout">
+        <div class="bar"> 
+          <header class="f-col-4"> 
+            <a href="index.html"><img src="img/logo-thick-light.svg" alt="Tuxedo Logo"> </a>
+          </header> 
+          <div class="close f-col-1"></div> 
+        </div>
+        <ul class="flyout-menu"> 
+          <li><a href="start.html">Getting Started</a></li> 
+          <li class="fly-dropdown">Docs +
+            <ul class="dropdown-menu">
+              <li><a href="animations.html">Animations</a></li>
+              <li><a href="buttons.html">Buttons</a></li>
+              <li><a href="colors.html">Colors</a></li>
+              <li><a href="fonts.html">Fonts</a></li>
+              <li><a href="footers.html">Footers</a></li>
+              <li><a href="forms.html">Forms</a></li>
+              <li><a href="grid.html">Grid</a></li>
+              <li><a href="helpers.html">Helpers</a></li>
+              <li><a href="hero.html">Hero</a></li>
+              <li><a href="nav.html">Nav</a></li>
+              <li><a href="sidebar.html">Sidebar</a></li>
+              <li><a href="threejs.html">Three.js</a></li>
+            </ul>
+          </li> 
+          <li><a href="about.html">About</a></li> 
+        </ul>
+      </div>
+    </nav>
+    <div class="side-bar bg-dark">
+      <head>
+        <a href="index.html"><img src="img/thin-logo-large.svg" alt="tuxedo logo"></a>
+      </head>
+      <ul class="underline-light">
+        <li><a href="start.html">Getting Started</a></li>
+        <li><a href="animations.html">Animations</a></li>
+        <li><a href="buttons.html">Buttons</a></li>
+        <li><a href="colors.html">Colors</a></li>
+        <li><a href="fonts.html">Fonts</a></li>
+        <li><a href="footers.html">Footers</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="grid.html">Grid</a></li>
+        <li><a href="helpers.html">Helpers</a></li>
+        <li><a href="hero.html">Hero</a></li>
+        <li><a href="nav.html">Nav</a></li>
+        <li class="active"><a href="scrollSpy.html">ScrollSpy</a></li>
+        <li><a href="sidebar.html">Sidebar</a></li>
+        <li><a href="threejs.html">Three.js</a></li>
+      </ul>
+      <ul>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <div class="side-bar-content">
+      <div class="f-row">
+        <div class="f-col-4">
+          <h1 class="text-dark underline-dark">ScrollSpy</h1>
+
+          <h3 class="text-dark" id="section1">Basic Functionality</h3>
+          <p>ScrollSpy is designed to show your users exactly where they are on a page, and allows for easy navigation to other sections with a simple click and smooth scroll transition. It is easy to set up as ScrollSpy dynamically adds as many or few sections as desired.</p>
+          <p>To use ScrollSpy on your site you will need to add a navigation with numbered <code>scrollSpy</code> ids. Each section of your page will then be given <code>section</code> ids with numbers that correspond to the <code>scrollSpy</code> ids in the navigation.</p>
+          <p>You can see ScrollSpy in action to the left of this page. Scroll Spy works well using the flex grid layout and the <code>fixed</code> helper class to keep it fixed at the top of the page. Checkout out the code below to get started.</p>
+
+          <h3 id="section2">Section 2 Example</h3>
+          <div class="code">
+            <xmp>
+<div class="container">
+  <div class="f-row">
+    <div class="f-col-1 scrollSpy">
+      <div class="fixed text-dark">
+        <h5 id="scrollSpy1" class="active">Section 1</h4>
+        <h5 id="scrollSpy2">Section 2</h4>
+        <h5 id="scrollSpy3">Section 3</h4>
+        <h5 id="scrollSpy4">Section 4</h4>
+      </div>
+    </div>
+    </div>
+    <div class="f-col-4">
+      <div id="section1">
+        <p>Your content here</p>
+      </div>
+      <div id="section2">
+        <p>Your content here</p>
+      </div>
+      <div id="section3">
+        <p>Your content here</p>
+      </div>
+      <div id="section4">
+        <p>Your content here</p>
+      </div>
+    </div>
+  </div>
+</div>
+            </xmp>
+          </div>
+
+          <h3 id="section3">Section 3 Example</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          <h3 id="section4">Section 4 Example</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </div>
+
+        <div class="f-col-1 scrollSpy">
+          <div class="fixed text-dark">
+            <h5 id="scrollSpy1" class="active">Basic Functionality</h4>
+            <h5 id="scrollSpy2">Section 2 Example</h4>
+            <h5 id="scrollSpy3">Section 3 Example</h4>
+            <h5 id="scrollSpy4">Section 4 Example</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer class="f-row responsive">
+      <small class="f-col-1 flex-center">2017 Erica Nafziger, All rights reserved.
+      </small>
+      <small class="f-col-1 flex-center">MIT License
+      </small>
+    </footer>
+  </body>
+</html>

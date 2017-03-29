@@ -1045,7 +1045,7 @@ footer {
   margin-bottom: 20px;
   color: #5c5c5c;
   overflow-y: hidden;
-  overflow-x: auto; }
+  overflow-x: scroll; }
   .code label {
     position: absolute;
     top: 0;
@@ -1158,5 +1158,21 @@ canvas {
 .arc path {
   stroke: #f4f4f4;
   stroke-width: 2; }
+
+g {
+  fill: none;
+  pointer-events: all; }
+
+g.hover path {
+  fill: red !important; }
+
+.scrollSpy .active {
+  border-left: 10px solid #2A7F62;
+  padding-left: 5px;
+  margin-left: -15px; }
+
+[id*="scrollSpy"]:hover {
+  cursor: pointer;
+  color: #5c5c5c; }
 
 /*# sourceMappingURL=styles.css.map */
